@@ -1,0 +1,32 @@
+10:20:43 **** Build of configuration Debug for project g2020_bsp_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xemacps_example_intr_dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../g2020_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'XEmacPsClkSetup':
+../src/xemacps_example_intr_dma.c:1300:6: warning: unused variable 'CrlApbClkCntrl' [-Wunused-variable]
+  u32 CrlApbClkCntrl;
+      ^~~~~~~~~~~~~~
+'Finished building: ../src/xemacps_example_intr_dma.c'
+' '
+'Building file: ../src/xemacps_example_util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../g2020_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+'Finished building: ../src/xemacps_example_util.c'
+' '
+'Building target: g2020_bsp_xemacps_example_intr_dma_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../g2020_bsp/ps7_cortexa9_0/lib -o "g2020_bsp_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: g2020_bsp_xemacps_example_intr_dma_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size g2020_bsp_xemacps_example_intr_dma_1.elf  |tee "g2020_bsp_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45836	   2748	  43504	  92088	  167b8	g2020_bsp_xemacps_example_intr_dma_1.elf
+'Finished building: g2020_bsp_xemacps_example_intr_dma_1.elf.size'
+' '
+
+10:20:45 Build Finished (took 2s.179ms)
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\xilinx_2017\Projects\BRAM_SPI_Test\BRAM_SPI_Test.sdk\Bram_SPI"/>
+		<item value="D:\xilinx_2017\Projects\BRAM_SPI_Test\BRAM_SPI_Test.sdk\Bram_SPI_bsp"/>
+		<item value="D:\xilinx_2017\Projects\BRAM_SPI_Test\BRAM_SPI_Test.sdk"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

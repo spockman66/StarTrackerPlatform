@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Mon Dec 20 23:14:08 2021
+# Process ID: 11432
+# Current directory: D:/xilinx_2017/Projects/BRAM_SPI_Test/BRAM_SPI_Test.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/xilinx_2017/Projects/BRAM_SPI_Test/BRAM_SPI_Test.sdk/webtalk/webtalk.log
+# Journal file: D:/xilinx_2017/Projects/BRAM_SPI_Test/BRAM_SPI_Test.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

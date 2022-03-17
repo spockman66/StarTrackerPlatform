@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="98089fs"></ZoomEndTime>
+      <Cursor1Time time="5000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/ch0/xhs_ddd" type="logic">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/ch0/xhs_ddd</obj_property>
+      <obj_property name="ObjectShortName">xhs_ddd</obj_property>
+   </wvobject>
+   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr0" type="logic">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr0</obj_property>
+      <obj_property name="ObjectShortName">wr0</obj_property>
+   </wvobject>
+   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr1" type="logic">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr1</obj_property>
+      <obj_property name="ObjectShortName">wr1</obj_property>
+   </wvobject>
+   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr2" type="logic">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr2</obj_property>
+      <obj_property name="ObjectShortName">wr2</obj_property>
+   </wvobject>
+   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr3" type="logic">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr3</obj_property>
+      <obj_property name="ObjectShortName">wr3</obj_property>
+   </wvobject>
+</wave_config>
