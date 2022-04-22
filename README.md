@@ -20,7 +20,7 @@ PS上目前运行裸机程序，负责将CMOS参数配置，发送DDR3内存中�
 ### 3. 电路设计
 本方案的设计初衷是，将搭载主控芯片的核心板和图像传感器及其外围电路分别放置在不同的PCB板上，二者之间使用较为通用的主板进行转接。该设计方案的好处是：若更换图像传感器，只需重新设计相应的外围电路（子板），不需要变动其他电路。  
 
-![电路架构设计](./Img/diagram.png)  
+![电路架构设计](./Img/diagram.PNG)  
 
 PCB目录中MainBoard和SensorBoard，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板
 
@@ -43,7 +43,7 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 
 
 #### 资源利用情况
-![ZYNQ-7035的资源利用](./Img/utilization.png)
+![ZYNQ-7035的资源利用](./Img/utilization.PNG)
 #### 时钟
 系统主时钟为10M，FPGA给CMOS提供的时钟为120M，CMOS的DDR串行时钟为60M
 手册中要求主时钟为50M，给CMOS提供的时钟600M，CMOS的DDR串行时钟为300M
