@@ -60,94 +60,17 @@ proc step_failed { step } {
   close $ch
 }
 
-
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/BRAM_SPI_wrapper.dcp
-  set_property webtalk.parent_dir D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.cache/wt [current_project]
-  set_property parent.project_path D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.xpr [current_project]
-  set_property ip_repo_paths D:/DOING/06-ip/package_ip_1/usr_file [current_project]
-  set_property ip_output_repo D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force BRAM_SPI_wrapper_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file BRAM_SPI_wrapper_drc_opted.rpt -pb BRAM_SPI_wrapper_drc_opted.pb -rpx BRAM_SPI_wrapper_drc_opted.rpx"
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  implement_debug_core 
-  place_design 
-  write_checkpoint -force BRAM_SPI_wrapper_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file BRAM_SPI_wrapper_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file BRAM_SPI_wrapper_utilization_placed.rpt -pb BRAM_SPI_wrapper_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file BRAM_SPI_wrapper_control_sets_placed.rpt"
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force BRAM_SPI_wrapper_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file BRAM_SPI_wrapper_drc_routed.rpt -pb BRAM_SPI_wrapper_drc_routed.pb -rpx BRAM_SPI_wrapper_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file BRAM_SPI_wrapper_methodology_drc_routed.rpt -pb BRAM_SPI_wrapper_methodology_drc_routed.pb -rpx BRAM_SPI_wrapper_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file BRAM_SPI_wrapper_power_routed.rpt -pb BRAM_SPI_wrapper_power_summary_routed.pb -rpx BRAM_SPI_wrapper_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file BRAM_SPI_wrapper_route_status.rpt -pb BRAM_SPI_wrapper_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file BRAM_SPI_wrapper_timing_summary_routed.rpt -rpx BRAM_SPI_wrapper_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file BRAM_SPI_wrapper_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file BRAM_SPI_wrapper_clock_utilization_routed.rpt"
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force BRAM_SPI_wrapper_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param simulator.modelsimInstallPath D:/software_kits/modelsim_10.6d/win64
+  set_param xicom.use_bs_reader 1
+  open_checkpoint BRAM_SPI_wrapper_routed.dcp
+  set_property webtalk.parent_dir D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force BRAM_SPI_wrapper.mmi }
   catch { write_bmm -force BRAM_SPI_wrapper_bd.bmm }

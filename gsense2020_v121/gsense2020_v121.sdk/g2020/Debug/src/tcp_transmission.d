@@ -41,7 +41,7 @@ src/tcp_transmission.o src/tcp_transmission.o: ../src/tcp_transmission.c \
  ../../g2020_bsp/ps7_cortexa9_0/include/netif/xadapter.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/netif/xtopology.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/lwip/tcp_impl.h \
- ../src/sensor_ctrl.h
+ ../src/sensor_ctrl.h ../../g2020_bsp/ps7_cortexa9_0/include/Control.h
 
 ../src/timer_intr.h:
 
@@ -132,3 +132,5 @@ src/tcp_transmission.o src/tcp_transmission.o: ../src/tcp_transmission.c \
 ../../g2020_bsp/ps7_cortexa9_0/include/lwip/tcp_impl.h:
 
 ../src/sensor_ctrl.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/Control.h:

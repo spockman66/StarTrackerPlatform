@@ -15,9 +15,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_axi_br
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_blk_mem_gen_0_0/BRAM_SPI_blk_mem_gen_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_blk_mem_gen_0_0 || ORIG_REF_NAME==BRAM_SPI_blk_mem_gen_0_0} -quiet] -quiet
 
-# IP: bd/BRAM_SPI/ip/BRAM_SPI_spi_config_0_0/BRAM_SPI_spi_config_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_spi_config_0_0 || ORIG_REF_NAME==BRAM_SPI_spi_config_0_0} -quiet] -quiet
-
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_clk_wiz_0_0/BRAM_SPI_clk_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_clk_wiz_0_0 || ORIG_REF_NAME==BRAM_SPI_clk_wiz_0_0} -quiet] -quiet
 
@@ -27,14 +24,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_axi_in
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_xbar_0/BRAM_SPI_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_xbar_0 || ORIG_REF_NAME==BRAM_SPI_xbar_0} -quiet] -quiet
 
-# IP: bd/BRAM_SPI/ip/BRAM_SPI_decoder_0_0/BRAM_SPI_decoder_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_decoder_0_0 || ORIG_REF_NAME==BRAM_SPI_decoder_0_0} -quiet] -quiet
-
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_proc_sys_reset_recv_0 || ORIG_REF_NAME==BRAM_SPI_proc_sys_reset_recv_0} -quiet] -quiet
-
-# IP: bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/BRAM_SPI_receiver_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_receiver_0_0 || ORIG_REF_NAME==BRAM_SPI_receiver_0_0} -quiet] -quiet
 
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_proc_sys_reset_0_0 || ORIG_REF_NAME==BRAM_SPI_proc_sys_reset_0_0} -quiet] -quiet
@@ -42,8 +33,14 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_proc_s
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_axi_interconnect_1_0/BRAM_SPI_axi_interconnect_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_axi_interconnect_1_0 || ORIG_REF_NAME==BRAM_SPI_axi_interconnect_1_0} -quiet] -quiet
 
-# IP: bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_0/BRAM_SPI_StoreImg_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_StoreImg_0_0 || ORIG_REF_NAME==BRAM_SPI_StoreImg_0_0} -quiet] -quiet
+# IP: bd/BRAM_SPI/ip/BRAM_SPI_Control_0_0/BRAM_SPI_Control_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_Control_0_0 || ORIG_REF_NAME==BRAM_SPI_Control_0_0} -quiet] -quiet
+
+# IP: bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/BRAM_SPI_StoreImg_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_StoreImg_0_1 || ORIG_REF_NAME==BRAM_SPI_StoreImg_0_1} -quiet] -quiet
+
+# IP: bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/BRAM_SPI_receiver_hw_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_receiver_hw_0_0 || ORIG_REF_NAME==BRAM_SPI_receiver_hw_0_0} -quiet] -quiet
 
 # IP: bd/BRAM_SPI/ip/BRAM_SPI_s00_regslice_0/BRAM_SPI_s00_regslice_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==BRAM_SPI_s00_regslice_0 || ORIG_REF_NAME==BRAM_SPI_s00_regslice_0} -quiet] -quiet

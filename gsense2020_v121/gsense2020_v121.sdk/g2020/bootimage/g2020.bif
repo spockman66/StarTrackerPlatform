@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\zynq_fsbl\Debug\zynq_fsbl.elf
+	D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\BRAM_SPI_wrapper_hw_platform_0\BRAM_SPI_wrapper.bit
+	D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\g2020\Debug\g2020.elf
+}

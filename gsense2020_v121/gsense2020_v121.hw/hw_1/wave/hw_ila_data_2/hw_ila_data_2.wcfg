@@ -10,12 +10,19 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="203432fs"></ZoomEndTime>
+      <ZoomEndTime time="4096001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="255"></NameColumnWidth>
+      <NameColumnWidth column_width="251"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="0" />
+   <WVObjectSize size="1" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0/inst/in_delay_tap_in_d" type="array">
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0/inst/in_delay_tap_in_d[19:0]</obj_property>
+      <obj_property name="ObjectShortName">in_delay_tap_in_d[19:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
 </wave_config>

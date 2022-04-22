@@ -30,6 +30,7 @@ nameStyle.variable.capitalization=2
 nameStyle.variable.prefix=
 nameStyle.variable.suffix=
 nameStyle.variable.wordDelimiter=
+scalability.numberOfLines=10000
 sourceHoverBackgroundColor=255,255,225
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true

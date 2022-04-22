@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Mar 17 09:08:39 2022
+| Date         : Fri Apr 22 09:51:52 2022
 | Host         : kickassWT running 64-bit major release  (build 9200)
 | Command      : report_utilization -file BRAM_SPI_wrapper_utilization_synth.rpt -pb BRAM_SPI_wrapper_utilization_synth.pb
 | Design       : BRAM_SPI_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   40 |     0 |       250 | 16.00 |
+| Bonded IOB                  |   42 |     0 |       250 | 16.80 |
 | Bonded IPADs                |    0 |     0 |        26 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        16 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
@@ -152,11 +152,10 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   36 |                  IO |
+| OBUF     |   38 |                  IO |
 | OBUFDS   |    2 |                  IO |
-| OBUFT    |    1 |                  IO |
+| IBUF     |    2 |                  IO |
 | INV      |    1 |                 LUT |
-| IBUF     |    1 |                  IO |
 +----------+------+---------------------+
 
 
@@ -167,20 +166,19 @@ Table of Contents
 |             Ref Name            | Used |
 +---------------------------------+------+
 | BRAM_SPI_xbar_0                 |    1 |
-| BRAM_SPI_spi_config_0_0         |    1 |
 | BRAM_SPI_s00_regslice_0         |    1 |
-| BRAM_SPI_receiver_0_0           |    1 |
+| BRAM_SPI_receiver_hw_0_0        |    1 |
 | BRAM_SPI_processing_system7_0_0 |    1 |
 | BRAM_SPI_proc_sys_reset_recv_0  |    1 |
 | BRAM_SPI_proc_sys_reset_0_0     |    1 |
-| BRAM_SPI_decoder_0_0            |    1 |
 | BRAM_SPI_clk_wiz_0_0            |    1 |
 | BRAM_SPI_blk_mem_gen_0_0        |    1 |
 | BRAM_SPI_axi_bram_ctrl_0_0      |    1 |
 | BRAM_SPI_auto_us_df_0           |    1 |
 | BRAM_SPI_auto_pc_1              |    1 |
 | BRAM_SPI_auto_pc_0              |    1 |
-| BRAM_SPI_StoreImg_0_0           |    1 |
+| BRAM_SPI_StoreImg_0_1           |    1 |
+| BRAM_SPI_Control_0_0            |    1 |
 +---------------------------------+------+
 
 

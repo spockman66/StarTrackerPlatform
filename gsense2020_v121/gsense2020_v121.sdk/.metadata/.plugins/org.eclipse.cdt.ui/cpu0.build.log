@@ -1,0 +1,75 @@
+16:10:24 **** Auto Build of configuration Debug for project cpu0 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cpus_msg.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cpus_msg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cpus_msg.d" -MT"src/cpus_msg.o" -o "src/cpus_msg.o" "../src/cpus_msg.c"
+'Finished building: ../src/cpus_msg.c'
+' '
+'Building file: ../src/idop.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/idop.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/idop.d" -MT"src/idop.o" -o "src/idop.o" "../src/idop.c"
+'Finished building: ../src/idop.c'
+' '
+'Building file: ../src/if.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/if.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/if.d" -MT"src/if.o" -o "src/if.o" "../src/if.c"
+'Finished building: ../src/if.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/modp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/modp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/modp.d" -MT"src/modp.o" -o "src/modp.o" "../src/modp.c"
+'Finished building: ../src/modp.c'
+' '
+'Building file: ../src/sensor_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sensor_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sensor_ctrl.d" -MT"src/sensor_ctrl.o" -o "src/sensor_ctrl.o" "../src/sensor_ctrl.c"
+'Finished building: ../src/sensor_ctrl.c'
+' '
+'Building file: ../src/spi.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/spi.d" -MT"src/spi.o" -o "src/spi.o" "../src/spi.c"
+'Finished building: ../src/spi.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+../src/sys_intr.c: In function 'init_intr':
+../src/sys_intr.c:43:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status;
+      ^~~~~~
+../src/sys_intr.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/thread.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/thread.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/thread.d" -MT"src/thread.o" -o "src/thread.o" "../src/thread.c"
+'Finished building: ../src/thread.c'
+' '
+'Building file: ../src/uartps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uartps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cpu0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uartps.d" -MT"src/uartps.o" -o "src/uartps.o" "../src/uartps.c"
+'Finished building: ../src/uartps.c'
+' '
+'Building target: cpu0.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cpu0_bsp/ps7_cortexa9_0/lib -o "cpu0.elf"  ./src/cpus_msg.o ./src/idop.o ./src/if.o ./src/main.o ./src/modp.o ./src/sensor_ctrl.o ./src/spi.o ./src/sys_intr.o ./src/thread.o ./src/uartps.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: cpu0.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cpu0.elf  |tee "cpu0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 191728	   4840	2218288	2414856	 24d908	cpu0.elf
+'Finished building: cpu0.elf.size'
+' '
+
+16:10:36 Build Finished (took 11s.712ms)
+

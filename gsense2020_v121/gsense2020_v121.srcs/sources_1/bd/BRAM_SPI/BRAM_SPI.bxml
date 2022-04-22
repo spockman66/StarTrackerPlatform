@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="BRAM_SPI" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1647478233"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1647478233"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1647478233"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1647478233"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1650592067"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1650592067"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1650592067"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1650592067"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\BRAM_SPI_processing_system7_0_0\BRAM_SPI_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -26,14 +26,6 @@
       <File Name="ip\BRAM_SPI_blk_mem_gen_0_0\BRAM_SPI_blk_mem_gen_0_0.xci" Type="IP">
         <Instance HierarchyPath="Block_RAM"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="1631611953" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\BRAM_SPI_spi_config_0_0\BRAM_SPI_spi_config_0_0.xci" Type="IP">
-        <Instance HierarchyPath="spi_config_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1642390190" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -63,14 +55,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\BRAM_SPI_decoder_0_0\BRAM_SPI_decoder_0_0.xci" Type="IP">
-        <Instance HierarchyPath="decoder_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1640142598" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\BRAM_SPI_proc_sys_reset_recv_0\BRAM_SPI_proc_sys_reset_recv_0.xci" Type="IP">
         <Instance HierarchyPath="proc_sys_reset_m"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="1642390190" IsTrackable="true" IsStatusTracked="true"/>
@@ -79,16 +63,40 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\BRAM_SPI_receiver_0_0\BRAM_SPI_receiver_0_0.xci" Type="IP">
-        <Instance HierarchyPath="receiver_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="1642477370" IsTrackable="true" IsStatusTracked="true"/>
+      <File Name="ip\BRAM_SPI_proc_sys_reset_0_0\BRAM_SPI_proc_sys_reset_0_0.xci" Type="IP">
+        <Instance HierarchyPath="proc_sys_reset_recv"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\BRAM_SPI_proc_sys_reset_0_0\BRAM_SPI_proc_sys_reset_0_0.xci" Type="IP">
-        <Instance HierarchyPath="proc_sys_reset_recv"/>
+      <File Name="ip\BRAM_SPI_axi_interconnect_1_0\BRAM_SPI_axi_interconnect_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_1"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BRAM_SPI_Control_0_0\BRAM_SPI_Control_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Control_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BRAM_SPI_StoreImg_0_1\BRAM_SPI_StoreImg_0_1.xci" Type="IP">
+        <Instance HierarchyPath="StoreImg_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\BRAM_SPI_receiver_hw_0_0\BRAM_SPI_receiver_hw_0_0.xci" Type="IP">
+        <Instance HierarchyPath="receiver_hw_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -104,22 +112,6 @@
       <File Name="sim\BRAM_SPI.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\BRAM_SPI_axi_interconnect_1_0\BRAM_SPI_axi_interconnect_1_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_interconnect_1"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\BRAM_SPI_StoreImg_0_0\BRAM_SPI_StoreImg_0_0.xci" Type="IP">
-        <Instance HierarchyPath="StoreImg_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\BRAM_SPI_s00_regslice_0\BRAM_SPI_s00_regslice_0.xci" Type="IP">

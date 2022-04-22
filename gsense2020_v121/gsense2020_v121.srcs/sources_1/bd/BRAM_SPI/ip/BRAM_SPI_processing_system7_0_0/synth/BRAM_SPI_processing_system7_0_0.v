@@ -58,6 +58,20 @@ CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AWUSE
 TXN=1,C_GP1_EN_MODIFIABLE_TXN=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module BRAM_SPI_processing_system7_0_0 (
+  SPI0_SCLK_I,
+  SPI0_SCLK_O,
+  SPI0_SCLK_T,
+  SPI0_MOSI_I,
+  SPI0_MOSI_O,
+  SPI0_MOSI_T,
+  SPI0_MISO_I,
+  SPI0_MISO_O,
+  SPI0_MISO_T,
+  SPI0_SS_I,
+  SPI0_SS_O,
+  SPI0_SS1_O,
+  SPI0_SS2_O,
+  SPI0_SS_T,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -167,6 +181,34 @@ module BRAM_SPI_processing_system7_0_0 (
   PS_PORB
 );
 
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_I" *)
+input wire SPI0_SCLK_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_O" *)
+output wire SPI0_SCLK_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SCK_T" *)
+output wire SPI0_SCLK_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_I" *)
+input wire SPI0_MOSI_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_O" *)
+output wire SPI0_MOSI_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO0_T" *)
+output wire SPI0_MOSI_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_I" *)
+input wire SPI0_MISO_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_O" *)
+output wire SPI0_MISO_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 IO1_T" *)
+output wire SPI0_MISO_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_I" *)
+input wire SPI0_SS_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_O" *)
+output wire SPI0_SS_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS1_O" *)
+output wire SPI0_SS1_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS2_O" *)
+output wire SPI0_SS2_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0 SS_T" *)
+output wire SPI0_SS_T;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *)
 output wire M_AXI_GP0_ARVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *)
@@ -547,20 +589,20 @@ inout wire PS_PORB;
     .SDIO1_WP(1'B0),
     .SDIO1_BUSPOW(),
     .SDIO1_BUSVOLT(),
-    .SPI0_SCLK_I(1'B0),
-    .SPI0_SCLK_O(),
-    .SPI0_SCLK_T(),
-    .SPI0_MOSI_I(1'B0),
-    .SPI0_MOSI_O(),
-    .SPI0_MOSI_T(),
-    .SPI0_MISO_I(1'B0),
-    .SPI0_MISO_O(),
-    .SPI0_MISO_T(),
-    .SPI0_SS_I(1'B0),
-    .SPI0_SS_O(),
-    .SPI0_SS1_O(),
-    .SPI0_SS2_O(),
-    .SPI0_SS_T(),
+    .SPI0_SCLK_I(SPI0_SCLK_I),
+    .SPI0_SCLK_O(SPI0_SCLK_O),
+    .SPI0_SCLK_T(SPI0_SCLK_T),
+    .SPI0_MOSI_I(SPI0_MOSI_I),
+    .SPI0_MOSI_O(SPI0_MOSI_O),
+    .SPI0_MOSI_T(SPI0_MOSI_T),
+    .SPI0_MISO_I(SPI0_MISO_I),
+    .SPI0_MISO_O(SPI0_MISO_O),
+    .SPI0_MISO_T(SPI0_MISO_T),
+    .SPI0_SS_I(SPI0_SS_I),
+    .SPI0_SS_O(SPI0_SS_O),
+    .SPI0_SS1_O(SPI0_SS1_O),
+    .SPI0_SS2_O(SPI0_SS2_O),
+    .SPI0_SS_T(SPI0_SS_T),
     .SPI1_SCLK_I(1'B0),
     .SPI1_SCLK_O(),
     .SPI1_SCLK_T(),

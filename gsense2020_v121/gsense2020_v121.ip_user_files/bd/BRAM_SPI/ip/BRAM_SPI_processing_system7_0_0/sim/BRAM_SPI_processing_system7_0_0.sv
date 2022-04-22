@@ -677,6 +677,20 @@
 
 //MODULE DECLARATION
  module BRAM_SPI_processing_system7_0_0 (
+  SPI0_SCLK_I,
+  SPI0_SCLK_O,
+  SPI0_SCLK_T,
+  SPI0_MOSI_I,
+  SPI0_MOSI_O,
+  SPI0_MOSI_T,
+  SPI0_MISO_I,
+  SPI0_MISO_O,
+  SPI0_MISO_T,
+  SPI0_SS_I,
+  SPI0_SS_O,
+  SPI0_SS1_O,
+  SPI0_SS2_O,
+  SPI0_SS_T,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -847,6 +861,20 @@
 
 //INPUT AND OUTPUT PORTS
 
+      input  SPI0_SCLK_I;
+      output  SPI0_SCLK_O;
+      output  SPI0_SCLK_T;
+      input  SPI0_MOSI_I;
+      output  SPI0_MOSI_O;
+      output  SPI0_MOSI_T;
+      input  SPI0_MISO_I;
+      output  SPI0_MISO_O;
+      output  SPI0_MISO_T;
+      input  SPI0_SS_I;
+      output  SPI0_SS_O;
+      output  SPI0_SS1_O;
+      output  SPI0_SS2_O;
+      output  SPI0_SS_T;
       output  M_AXI_GP0_ARVALID;
       output  M_AXI_GP0_AWVALID;
       output  M_AXI_GP0_BREADY;
@@ -957,6 +985,16 @@
 
 //REG DECLARATIONS
 
+      reg SPI0_SCLK_O;
+      reg SPI0_SCLK_T;
+      reg SPI0_MOSI_O;
+      reg SPI0_MOSI_T;
+      reg SPI0_MISO_O;
+      reg SPI0_MISO_T;
+      reg SPI0_SS_O;
+      reg SPI0_SS1_O;
+      reg SPI0_SS2_O;
+      reg SPI0_SS_T;
       reg M_AXI_GP0_ARVALID;
       reg M_AXI_GP0_AWVALID;
       reg M_AXI_GP0_BREADY;

@@ -1,0 +1,985 @@
+
+*** Running vivado
+    with args -log BRAM_SPI_StoreImg_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BRAM_SPI_StoreImg_0_1.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source BRAM_SPI_StoreImg_0_1.tcl -notrace
+Command: synth_design -top BRAM_SPI_StoreImg_0_1 -part xc7z035ffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17928 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 442.953 ; gain = 106.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BRAM_SPI_StoreImg_0_1' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/synth/BRAM_SPI_StoreImg_0_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'StoreImg' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:4]
+	Parameter C_M00_AXI_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DDR_BASE_M bound to: 60 - type: integer 
+	Parameter H_CNT bound to: 2048 - type: integer 
+	Parameter V_CNT bound to: 2048 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'interface' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:7]
+	Parameter DDR_BASE_M bound to: 60 - type: integer 
+	Parameter H_CNT bound to: 2048 - type: integer 
+	Parameter V_CNT bound to: 2048 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter RST bound to: 2'b01 
+	Parameter WRITE1 bound to: 2'b10 
+	Parameter WRITE2 bound to: 2'b11 
+	Parameter BURST_SIZE bound to: 256 - type: integer 
+	Parameter PKG_SIZE bound to: 4096 - type: integer 
+	Parameter BURST_TIMES bound to: 2048 - type: integer 
+	Parameter DDR_BASE bound to: 62914560 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_for_store' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/synth/fifo_generator_for_store.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 32 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx9 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 4095 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 4094 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_RD_DEPTH bound to: 4096 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 1 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_WR_DEPTH bound to: 4096 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_1' declared at 'd:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_1' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/synth/fifo_generator_for_store.vhd:541]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_for_store' (27#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/synth/fifo_generator_for_store.vhd:73]
+INFO: [Synth 8-226] default block is never used [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:154]
+WARNING: [Synth 8-6014] Unused sequential element fifo_srst_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:113]
+INFO: [Synth 8-256] done synthesizing module 'interface' (28#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:7]
+INFO: [Synth 8-638] synthesizing module 'MSXBO_FDMA_v1_0_M00_AXI' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:4]
+	Parameter C_M_AXI_BURST_LEN bound to: 256 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 8 - type: integer 
+	Parameter BURST_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MSXBO_FDMA_v1_0_M00_AXI' (29#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:4]
+WARNING: [Synth 8-3848] Net pkg_rd_areq in module/entity StoreImg does not have driver. [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:71]
+WARNING: [Synth 8-3848] Net pkg_rd_addr in module/entity StoreImg does not have driver. [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:75]
+WARNING: [Synth 8-3848] Net pkg_rd_size in module/entity StoreImg does not have driver. [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:76]
+INFO: [Synth 8-256] done synthesizing module 'StoreImg' (30#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_SPI_StoreImg_0_1' (31#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/synth/BRAM_SPI_StoreImg_0_1.v:57]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design MSXBO_FDMA_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[11]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[10]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[11]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[10]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[11]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[11]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[11]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[10]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design updn_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_fwft has unconnected port RAM_ALMOST_EMPTY
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[11]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[10]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[9]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[8]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[7]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design rd_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_BUSY
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:41 ; elapsed = 00:01:45 . Memory (MB): peak = 720.855 ; gain = 384.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_areq to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[31] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[30] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[29] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[28] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[27] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[26] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[25] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[24] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[23] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[22] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[21] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[20] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[19] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[18] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[17] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[16] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[15] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[14] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[13] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[12] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[11] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[10] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[9] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[8] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[7] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[6] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[5] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[4] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[3] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[2] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[1] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_addr[0] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[31] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[30] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[29] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[28] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[27] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[26] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[25] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[24] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[23] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[22] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[21] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[20] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[19] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[18] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[17] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[16] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[15] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[14] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[13] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[12] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[11] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[10] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[9] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[8] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[7] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[6] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[5] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[4] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[3] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[2] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[1] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+WARNING: [Synth 8-3295] tying undriven pin M00_AXI_inst:pkg_rd_size[0] to constant 0 [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/StoreImg.v:114]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 720.855 ; gain = 384.465
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/fifo_generator_for_store.xdc] for cell 'inst/if_inst/fifo_inst/U0'
+Finished Parsing XDC File [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/fifo_generator_for_store.xdc] for cell 'inst/if_inst/fifo_inst/U0'
+Parsing XDC File [D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_StoreImg_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_StoreImg_0_1_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_StoreImg_0_1_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BRAM_SPI_StoreImg_0_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BRAM_SPI_StoreImg_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 880.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 880.684 ; gain = 544.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 880.684 ; gain = 544.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/if_inst/fifo_inst/U0. (constraint file  D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_StoreImg_0_1_synth_1/dont_touch.xdc, line 11).
+Applied set_property DONT_TOUCH = true for inst/if_inst/fifo_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 880.684 ; gain = 544.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "leaving_empty_fwft" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "wr_fbuf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "W_STATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_rst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element wr_fbuf_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:96]
+INFO: [Synth 8-4471] merging register 'axi_wvalid_reg' into 'w_cycle_flag_reg' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:108]
+WARNING: [Synth 8-6014] Unused sequential element axi_wvalid_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:108]
+INFO: [Synth 8-5546] ROM "axi_wlast" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:96]
+WARNING: [Synth 8-6014] Unused sequential element w_word_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element wr_data_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:138]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:112]
+WARNING: [Synth 8-6014] Unused sequential element rd_data_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:142]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 880.684 ; gain = 544.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 49    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   5 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rd_fwft 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+Module dc_ss_fwft 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module MSXBO_FDMA_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst/M00_AXI_inst/axi_wlast" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element inst/if_inst/wr_fbuf_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/src/interface.v:96]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_inst/w_word_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_inst/wr_data_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:138]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_inst/rd_data_cnt_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:142]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_inst/axi_awaddr_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:96]
+WARNING: [Synth 8-6014] Unused sequential element inst/M00_AXI_inst/axi_araddr_reg was removed.  [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v:112]
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[7] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[6] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[5] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[4] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_bready driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[7] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[6] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[5] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[4] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[3] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[2] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlen[0] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arsize[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arsize[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arburst[0] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arlock driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arcache[1] driven by constant 1
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design BRAM_SPI_StoreImg_0_1 has port m00_axi_arqos[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_inst/r_fdma_locked_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_58/\inst/M00_AXI_inst/axi_araddr_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_inst/read_data_flag_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/M00_AXI_inst/axi_rready_reg )
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/r_fdma_locked_reg) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_arvalid_reg) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/r_cycle_flag_reg) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/read_data_flag_reg) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_rready_reg) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[0]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[1]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[2]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[3]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[4]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[5]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[6]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[7]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[8]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[9]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[10]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[11]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[12]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[13]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[14]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[15]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[16]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[17]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[18]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[19]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[20]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[21]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[22]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[23]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[24]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[25]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[26]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[27]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[28]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[29]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[30]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/rd_data_cnt_reg[31]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[10]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[9]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[8]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[7]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[6]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[5]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[4]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[3]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[2]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[1]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/if_inst/wr_addr_reg[0]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[2]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[3]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[4]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[5]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[6]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[7]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_awaddr_reg[8]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[2]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[3]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[4]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[5]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[6]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[7]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[8]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[9]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[10]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[11]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[12]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[13]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[14]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[15]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[16]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[17]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[18]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[19]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[20]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[21]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[22]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[23]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[24]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[25]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[26]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[27]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[28]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[29]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[30]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+INFO: [Synth 8-3332] Sequential element (inst/M00_AXI_inst/axi_araddr_reg[31]) is unused and will be removed from module BRAM_SPI_StoreImg_0_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:03 . Memory (MB): peak = 880.684 ; gain = 544.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 918.320 ; gain = 581.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 918.617 ; gain = 582.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    37|
+|2     |LUT1     |    13|
+|3     |LUT2     |    35|
+|4     |LUT3     |    32|
+|5     |LUT4     |    63|
+|6     |LUT5     |    17|
+|7     |LUT6     |    17|
+|8     |MUXCY    |    24|
+|9     |RAMB36E1 |     4|
+|10    |FDCE     |    43|
+|11    |FDRE     |   163|
+|12    |FDSE     |     9|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------------+-----------------------------------------+------+
+|      |Instance                                                     |Module                                   |Cells |
++------+-------------------------------------------------------------+-----------------------------------------+------+
+|1     |top                                                          |                                         |   457|
+|2     |  inst                                                       |StoreImg                                 |   457|
+|3     |    M00_AXI_inst                                             |MSXBO_FDMA_v1_0_M00_AXI                  |   112|
+|4     |    if_inst                                                  |interface                                |   345|
+|5     |      fifo_inst                                              |fifo_generator_for_store                 |   197|
+|6     |        U0                                                   |fifo_generator_v13_2_1                   |   197|
+|7     |          inst_fifo_gen                                      |fifo_generator_v13_2_1_synth             |   197|
+|8     |            \gconvfifo.rf                                    |fifo_generator_top                       |   197|
+|9     |              \grf.rf                                        |fifo_generator_ramfifo                   |   197|
+|10    |                \gntv_or_sync_fifo.gl0.rd                    |rd_logic                                 |    91|
+|11    |                  \gr1.gdcf.dc                               |dc_ss_fwft                               |    13|
+|12    |                    dc                                       |updn_cntr                                |    13|
+|13    |                  \gr1.gr1_int.rfwft                         |rd_fwft                                  |    35|
+|14    |                  \grss.rsts                                 |rd_status_flags_ss                       |    15|
+|15    |                    c1                                       |compare_1                                |     7|
+|16    |                    c2                                       |compare_2                                |     6|
+|17    |                  rpntr                                      |rd_bin_cntr                              |    28|
+|18    |                \gntv_or_sync_fifo.gl0.wr                    |wr_logic                                 |    70|
+|19    |                  \gwss.wsts                                 |wr_status_flags_ss                       |    18|
+|20    |                    c0                                       |compare                                  |     7|
+|21    |                    c1                                       |compare_0                                |     6|
+|22    |                  wpntr                                      |wr_bin_cntr                              |    52|
+|23    |                \gntv_or_sync_fifo.mem                       |memory                                   |    36|
+|24    |                  \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1                       |     4|
+|25    |                    inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                 |     4|
+|26    |                      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                          |     4|
+|27    |                        \valid.cstr                          |blk_mem_gen_generic_cstr                 |     4|
+|28    |                          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                   |     1|
+|29    |                            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                 |     1|
+|30    |                          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0   |     1|
+|31    |                            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0 |     1|
+|32    |                          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1   |     1|
+|33    |                            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1 |     1|
+|34    |                          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2   |     1|
+|35    |                            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2 |     1|
++------+-------------------------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 539 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:02:07 . Memory (MB): peak = 938.664 ; gain = 442.445
+Synthesis Optimization Complete : Time (s): cpu = 00:02:10 ; elapsed = 00:02:15 . Memory (MB): peak = 938.664 ; gain = 602.273
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 182 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 946.742 ; gain = 621.539
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_StoreImg_0_1_synth_1/BRAM_SPI_StoreImg_0_1.dcp' has been generated.

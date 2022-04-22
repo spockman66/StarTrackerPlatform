@@ -9,6 +9,7 @@ LD_SRCS += \
 C_SRCS += \
 ../src/main.c \
 ../src/sensor_ctrl.c \
+../src/spi.c \
 ../src/sys_intr.c \
 ../src/tcp_transmission.c \
 ../src/timer_intr.c \
@@ -18,6 +19,7 @@ C_SRCS += \
 OBJS += \
 ./src/main.o \
 ./src/sensor_ctrl.o \
+./src/spi.o \
 ./src/sys_intr.o \
 ./src/tcp_transmission.o \
 ./src/timer_intr.o \
@@ -27,6 +29,7 @@ OBJS += \
 C_DEPS += \
 ./src/main.d \
 ./src/sensor_ctrl.d \
+./src/spi.d \
 ./src/sys_intr.d \
 ./src/tcp_transmission.d \
 ./src/timer_intr.d \

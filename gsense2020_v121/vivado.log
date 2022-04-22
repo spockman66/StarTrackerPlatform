@@ -1,0 +1,1163 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 30 15:31:15 2022
+# Process ID: 9316
+# Current directory: D:/xilinx_2017/Projects/gsense2020_v121
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13580 D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.xpr
+# Log file: D:/xilinx_2017/Projects/gsense2020_v121/vivado.log
+# Journal file: D:/xilinx_2017/Projects/gsense2020_v121\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 898.504 ; gain = 206.574
+update_compile_order -fileset sources_1
+save_project_as gsense2020_v130 D:/xilinx_2017/Projects/gsense2020_v130 -force
+save_project_as: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 910.418 ; gain = 10.305
+open_bd_design {D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - BRAM_CTL1
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - Block_RAM
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_m
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_recv
+Adding cell -- xilinx.com:user:decoder:1.0 - decoder_0
+Adding cell -- xilinx.com:user:StoreImg:1.0 - StoreImg_0
+Adding cell -- xilinx.com:user:spi_config:1.2 - spi_config_0
+Adding cell -- xilinx.com:user:receiver:1.0 - receiver_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /proc_sys_reset_m/ext_reset_in(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /proc_sys_reset_recv/ext_reset_in(rst)
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us_df
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <BRAM_SPI> from BD file <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 989.941 ; gain = 76.801
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.824 ; gain = 18.832
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1038.816 ; gain = 8.906
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {16.750} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.750} CONFIG.MMCM_CLKOUT0_PHASE {0.000} CONFIG.MMCM_CLKOUT1_DIVIDE {67} CONFIG.CLKOUT1_JITTER {164.342} CONFIG.CLKOUT1_PHASE_ERROR {116.757} CONFIG.CLKOUT2_JITTER {230.134} CONFIG.CLKOUT2_PHASE_ERROR {116.757}] [get_ips clk_wiz_0]
+generate_target all [get_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+export_ip_user_files -of_objects [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci] -directory d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files -ipstatic_source_dir d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/modelsim} {questa=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/questa} {riviera=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/riviera} {activehdl=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+export_ip_user_files -of_objects  [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v] -no_script -reset -force -quiet
+remove_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/storeimg_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.293 ; gain = 16.773
+update_compile_order -fileset sources_1
+current_project receiver_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 94 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+open_project D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'receiver_0' is locked:
+* IP definition 'receiver_2020 (1.0)' for IP 'receiver_0' (customized with software release 2017.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1602.105 ; gain = 0.000
+upgrade_ip -vlnv xilinx.com:user:receiver:1.0 [get_ips  receiver_0] -log ip_upgrade.log
+Upgrading 'receiver_0'
+INFO: [IP_Flow 19-3422] Upgraded receiver_0 (receiver_2020 1.0) from revision 86 to revision 94
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'trainning_words'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'receiver_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'receiver_0'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'receiver_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips receiver_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'receiver_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'receiver_0'...
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1602.105 ; gain = 0.000
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+upgrade_ip -vlnv xilinx.com:user:decoder:1.0 [get_ips  decoder_0] -log ip_upgrade.log
+Upgrading 'decoder_0'
+INFO: [IP_Flow 19-3422] Upgraded decoder_0 (decoder_v1_0 1.0) from revision 31 to revision 33
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'frame_req_cnt'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'decoder_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'decoder_0'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'decoder_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips decoder_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'decoder_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'decoder_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'decoder_0'...
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/interface_0/interface_0.xci
+
+[Wed Mar 30 17:17:00 2022] Launched synth_1...
+Run output will be captured here: D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.runs/synth_1/runme.log
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx_2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'selectio_wiz_0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj selectio_wiz_0_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/img_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module img_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ser2par
+INFO: [VRFC 10-2458] undeclared symbol clk_in_int_buf, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v:87]
+INFO: [VRFC 10-2458] undeclared symbol clk_div, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v:99]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/tranning.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tranning
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/sim/receiver_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/fifo_generator_for_store/sim/fifo_generator_for_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_for_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/sim/interface_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/imports/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1195] overwriting previous definition of module decoder [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_tb
+INFO: [VRFC 10-2458] undeclared symbol sync, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:58]
+"xvhdl --incr --relax -prj selectio_wiz_0_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.762 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 331becc69778477d86511332a88cd134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot selectio_wiz_0_tb_behav xil_defaultlib.selectio_wiz_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port frame_req_cnt on this module [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:113]
+ERROR: [VRFC 10-2063] Module <decoder> not found while processing module instance <inst> [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v:80]
+ERROR: [VRFC 10-2063] Module <receiver_0> not found while processing module instance <recv_inst> [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:118]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1603.762 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1613.566 ; gain = 9.566
+update_compile_order -fileset sources_1
+current_project StoreImg_v1_0_project
+current_project selectio_wiz_0_ex
+current_project StoreImg_v1_0_project
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property value_validation_type range_long [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1024 [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 4095 [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+ipgui::add_param -name {H_CNT} -component [ipx::current_core] -display_name {H Cnt} -show_label {true} -show_range {true} -widget {}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified .Providing a default widget
+set_property value_validation_type range_long [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1024 [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 4095 [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+ipgui::add_param -name {V_CNT} -component [ipx::current_core] -display_name {V Cnt} -show_label {true} -show_range {true} -widget {}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified .Providing a default widget
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+current_project selectio_wiz_0_ex
+current_project receiver_v1_0_project
+export_ip_user_files -of_objects  [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v] -no_script -reset -force -quiet
+remove_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v
+close_project
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+report_ip_status -name ip_status
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx_2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'selectio_wiz_0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj selectio_wiz_0_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/img_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module img_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ser2par
+INFO: [VRFC 10-2458] undeclared symbol clk_in_int_buf, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v:87]
+INFO: [VRFC 10-2458] undeclared symbol clk_div, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v:99]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/tranning.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tranning
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/sim/receiver_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/fifo_generator_for_store/sim/fifo_generator_for_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_for_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/sim/interface_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/imports/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1195] overwriting previous definition of module decoder [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_tb
+INFO: [VRFC 10-2458] undeclared symbol sync, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:58]
+"xvhdl --incr --relax -prj selectio_wiz_0_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 331becc69778477d86511332a88cd134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot selectio_wiz_0_tb_behav xil_defaultlib.selectio_wiz_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port pos_y [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.decoder_0
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=16.75...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.IBUFDS(IOSTANDARD="LVDS_25")
+Compiling secureip modules ...
+Compiling module unisims_ver.ISERDESE2(DATA_WIDTH=8,INTERFACE...
+Compiling module xil_defaultlib.selectio_wiz_0_selectio_wiz_defa...
+Compiling module xil_defaultlib.selectio_wiz_0
+Compiling module xil_defaultlib.tranning
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_a...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(...
+Compiling module fifo_generator_v13_2_1.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1(C_DATA_CO...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.img_receiver
+Compiling module xil_defaultlib.receiver
+Compiling module xil_defaultlib.receiver_0
+Compiling module xil_defaultlib.selectio_wiz_0_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot selectio_wiz_0_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim/xsim.dir/selectio_wiz_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 30 17:29:19 2022...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1633.547 ; gain = 0.426
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "selectio_wiz_0_tb_behav -key {Behavioral:sim_1:Functional:selectio_wiz_0_tb} -tclbatch {selectio_wiz_0_tb.tcl} -view {D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Timing checks are not valid
+
+Timing checks are valid
+
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1733.039 ; gain = 7.441
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1733.039 ; gain = 99.406
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'selectio_wiz_0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1733.039 ; gain = 100.547
+current_project gsense2020_v130
+run 100 us
+run 100 us
+run 100 ms
+lined           0 finished
+lined           1 finished
+lined           2 finished
+lined           3 finished
+lined           4 finished
+lined           5 finished
+lined           6 finished
+lined           7 finished
+lined           8 finished
+lined           9 finished
+lined          10 finished
+lined          11 finished
+lined          12 finished
+lined          13 finished
+lined          14 finished
+lined          15 finished
+lined          16 finished
+lined          17 finished
+lined          18 finished
+lined          19 finished
+run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 1741.902 ; gain = 6.660
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1741.902 ; gain = 0.000
+current_project selectio_wiz_0_ex
+upgrade_ip [get_ips  {interface_0 receiver_0}] -log ip_upgrade.log
+Upgrading 'interface_0'
+INFO: [IP_Flow 19-3422] Upgraded interface_0 (interface_v1_0 1.0) from revision 38 to revision 40
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'interface_0'...
+Upgrading 'receiver_0'
+INFO: [IP_Flow 19-1972] Upgraded receiver_0 from receiver_2020 1.0 to receiver_2020 1.0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'receiver_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {interface_0 receiver_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/interface_0/interface_0.xci D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'interface_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'interface_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'receiver_0'...
+CRITICAL WARNING: [IP_Flow 19-663] Failed to copy file 'd:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v', it does not exist.
+CRITICAL WARNING: [IP_Flow 19-157] Failed to copy file from 'd:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v' to 'd:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/ser2par.v'.
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'receiver_0'. Failed to generate 'Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'receiver_0'. Failed to generate 'Synthesis' outputs: 
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/ch05_ps_emio/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'src/ser2par.v' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'src/ser2par.v' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1741.902 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::remove_file src/ser2par.v [ipx::get_file_groups xilinx_anylanguagebehavioralsimulation -of_objects [ipx::current_core]]
+ipx::remove_file src/ser2par.v [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+set_property core_revision 95 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:receiver:1.0 [get_ips  receiver_0] -log ip_upgrade.log
+Upgrading 'receiver_0'
+INFO: [IP_Flow 19-3422] Upgraded receiver_0 (receiver_2020 1.0) from revision 94 to revision 95
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'receiver_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips receiver_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'receiver_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'receiver_0'...
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1741.902 ; gain = 0.000
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx_2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'selectio_wiz_0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj selectio_wiz_0_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/img_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module img_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/tranning.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tranning
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/sim/receiver_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/fifo_generator_for_store/sim/fifo_generator_for_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_for_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/sim/interface_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/imports/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1195] overwriting previous definition of module decoder [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_0
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/ch05_ps_emio/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_xilinx_com_user_receiver_1_0_1' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object receiver_0
+CRITICAL WARNING: [IP_Flow 19-973] Failed to create IP instance 'receiver_0'. Error during customization.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1741.902 ; gain = 0.000
+INFO: [Common 17-344] 'ipx::edit_ip_in_project' was cancelled
+close_project
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx_2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'selectio_wiz_0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj selectio_wiz_0_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/img_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module img_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/tranning.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tranning
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/sim/receiver_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/fifo_generator_for_store/sim/fifo_generator_for_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_for_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/sim/interface_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/imports/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1195] overwriting previous definition of module decoder [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_tb
+INFO: [VRFC 10-2458] undeclared symbol sync, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:58]
+"xvhdl --incr --relax -prj selectio_wiz_0_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 331becc69778477d86511332a88cd134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot selectio_wiz_0_tb_behav xil_defaultlib.selectio_wiz_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port pos_y [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.decoder_0
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=16.75...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.IBUFDS(IOSTANDARD="LVDS_25")
+Compiling secureip modules ...
+Compiling module unisims_ver.ISERDESE2(DATA_WIDTH=8,INTERFACE...
+Compiling module xil_defaultlib.selectio_wiz_0_selectio_wiz_defa...
+Compiling module xil_defaultlib.selectio_wiz_0
+Compiling module xil_defaultlib.tranning
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_a...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(...
+Compiling module fifo_generator_v13_2_1.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1(C_DATA_CO...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.img_receiver
+Compiling module xil_defaultlib.receiver
+Compiling module xil_defaultlib.receiver_0
+Compiling module xil_defaultlib.selectio_wiz_0_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot selectio_wiz_0_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1741.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "selectio_wiz_0_tb_behav -key {Behavioral:sim_1:Functional:selectio_wiz_0_tb} -tclbatch {selectio_wiz_0_tb.tcl} -view {D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Timing checks are not valid
+
+Timing checks are valid
+
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1752.512 ; gain = 0.113
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1752.512 ; gain = 10.609
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'selectio_wiz_0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1752.512 ; gain = 10.609
+run 100 ms
+lined           0 finished
+lined           1 finished
+lined           2 finished
+lined           3 finished
+lined           4 finished
+lined           5 finished
+lined           6 finished
+lined           7 finished
+lined           8 finished
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 1758.750 ; gain = 6.238
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_project gsense2020_v130
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+report_ip_status -name ip_status
+current_project selectio_wiz_0_ex
+current_project gsense2020_v130
+open_bd_design {D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd}
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/storeimg_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1758.750 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1758.750 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project selectio_wiz_0_ex
+report_ip_status -name ip_status 
+close_project
+open_project D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx_2017/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'selectio_wiz_0_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj selectio_wiz_0_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_selectio_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/selectio_wiz_0_1/selectio_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/img_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module img_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/tranning.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tranning
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/sim/receiver_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/fifo_generator_for_store/sim/fifo_generator_for_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_for_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/src/interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/interface_0/sim/interface_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interface_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/imports/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+WARNING: [VRFC 10-1195] overwriting previous definition of module decoder [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder.v:18]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/sim/decoder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ip/decoder_0/src/decoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectio_wiz_0_tb
+INFO: [VRFC 10-2458] undeclared symbol sync, assumed default net type wire [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/imports/selectio_wiz_0_tb.v:58]
+"xvhdl --incr --relax -prj selectio_wiz_0_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx_2017/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 331becc69778477d86511332a88cd134 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot selectio_wiz_0_tb_behav xil_defaultlib.selectio_wiz_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port pos_y [D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/src/receiver.v:97]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.decoder_0
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=16.75...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.IBUFDS(IOSTANDARD="LVDS_25")
+Compiling secureip modules ...
+Compiling module unisims_ver.ISERDESE2(DATA_WIDTH=8,INTERFACE...
+Compiling module xil_defaultlib.selectio_wiz_0_selectio_wiz_defa...
+Compiling module xil_defaultlib.selectio_wiz_0
+Compiling module xil_defaultlib.tranning
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stag...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_a...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(...
+Compiling module fifo_generator_v13_2_1.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1(C_DATA_CO...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.img_receiver
+Compiling module xil_defaultlib.receiver
+Compiling module xil_defaultlib.receiver_0
+Compiling module xil_defaultlib.selectio_wiz_0_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot selectio_wiz_0_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1758.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "selectio_wiz_0_tb_behav -key {Behavioral:sim_1:Functional:selectio_wiz_0_tb} -tclbatch {selectio_wiz_0_tb.tcl} -view {D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50us
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Timing checks are not valid
+
+Timing checks are valid
+
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1763.902 ; gain = 0.383
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1763.902 ; gain = 5.152
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'selectio_wiz_0_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50us
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1763.902 ; gain = 5.152
+current_project receiver_v1_0_project
+current_project selectio_wiz_0_ex
+run 100 ms
+lined           0 finished
+lined           1 finished
+lined           2 finished
+lined           3 finished
+lined           4 finished
+lined           5 finished
+lined           6 finished
+lined           7 finished
+lined           8 finished
+lined           9 finished
+lined          10 finished
+lined          11 finished
+lined          12 finished
+lined          13 finished
+lined          14 finished
+lined          15 finished
+lined          16 finished
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1764.223 ; gain = 0.320
+current_project receiver_v1_0_project
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/storeimg_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1764.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+current_project receiver_v1_0_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project StoreImg_v1_0_project
+current_project receiver_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 96 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+current_project gsense2020_v130
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -log ip_upgrade.log
+Upgrading 'D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd'
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'BRAM_SPI_StoreImg_0_0'. Sub-design: 'D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_0/BRAM_SPI_StoreImg_0_0.xci'.
+WARNING: [Vivado 12-3647] The given sub-design is not contained in the block fileset 'BRAM_SPI_receiver_0_0'. Sub-design: 'D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/BRAM_SPI_receiver_0_0.xci'.
+INFO: [IP_Flow 19-3422] Upgraded BRAM_SPI_StoreImg_0_0 (StoreImg 1.0) from revision 4 to revision 5
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'pos_x'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'pos_y'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'BRAM_SPI_StoreImg_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'pos_x' is not found on the upgraded version of the cell '/StoreImg_0'. Its connection to the net 'receiver_0_pos_x' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'pos_y' is not found on the upgraded version of the cell '/StoreImg_0'. Its connection to the net 'receiver_0_pos_y' has been removed.
+INFO: [IP_Flow 19-3422] Upgraded BRAM_SPI_receiver_0_0 (receiver_2020 1.0) from revision 93 to revision 95
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'BRAM_SPI_StoreImg_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/xilinx_2017/Projects/gsense2020_v130/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd> 
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ui/bd_176265c9.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/gsense2020_v130/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /decoder_0/clk_rxg have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Block_RAM/addra'(32) to net 'BRAM_CTL1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/synth/BRAM_SPI.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Block_RAM/addra'(32) to net 'BRAM_CTL1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/sim/BRAM_SPI.v
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hdl/BRAM_SPI_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BRAM_CTL1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Block_RAM .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_config_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block decoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_m .
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+INFO: [BD 41-1029] Generation completed for the IP Integrator block receiver_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_recv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StoreImg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_pc_1/BRAM_SPI_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_us_df_0/BRAM_SPI_auto_us_df_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_us_df .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_pc_0/BRAM_SPI_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hw_handoff/BRAM_SPI.hwh
+Generated Block Design Tcl file D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hw_handoff/BRAM_SPI_bd.tcl
+Generated Hardware Definition File D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/synth/BRAM_SPI.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1764.223 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_receiver_0_0] }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_StoreImg_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_s00_regslice_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_us_df_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+launch_runs -jobs 4 {BRAM_SPI_receiver_0_0_synth_1 BRAM_SPI_StoreImg_0_0_synth_1 BRAM_SPI_s00_regslice_0_synth_1 BRAM_SPI_auto_pc_1_synth_1 BRAM_SPI_auto_us_df_0_synth_1 BRAM_SPI_auto_pc_0_synth_1}
+[Wed Mar 30 18:18:01 2022] Launched BRAM_SPI_receiver_0_0_synth_1, BRAM_SPI_StoreImg_0_0_synth_1, BRAM_SPI_s00_regslice_0_synth_1, BRAM_SPI_auto_pc_1_synth_1, BRAM_SPI_auto_us_df_0_synth_1, BRAM_SPI_auto_pc_0_synth_1...
+Run output will be captured here:
+BRAM_SPI_receiver_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_receiver_0_0_synth_1/runme.log
+BRAM_SPI_StoreImg_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_StoreImg_0_0_synth_1/runme.log
+BRAM_SPI_s00_regslice_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_s00_regslice_0_synth_1/runme.log
+BRAM_SPI_auto_pc_1_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_auto_pc_1_synth_1/runme.log
+BRAM_SPI_auto_us_df_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_auto_us_df_0_synth_1/runme.log
+BRAM_SPI_auto_pc_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/storeimg_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1950.441 ; gain = 11.516
+update_compile_order -fileset sources_1
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'
+current_project gsense2020_v130
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+report_ip_status -name ip_status
+current_project selectio_wiz_0_ex
+current_project gsense2020_v130
+upgrade_ip [get_ips  {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -log ip_upgrade.log
+Upgrading 'D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_StoreImg_0_0_synth_1
+
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_receiver_0_0_synth_1
+
+INFO: [IP_Flow 19-3422] Upgraded BRAM_SPI_StoreImg_0_0 (StoreImg 1.0) from revision 5 to revision 8
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'frame_saved'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'BRAM_SPI_StoreImg_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded BRAM_SPI_receiver_0_0 (receiver_2020 1.0) from revision 95 to revision 96
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'BRAM_SPI_StoreImg_0_0' has identified issues that may require user intervention. Please review the upgrade log 'd:/xilinx_2017/Projects/gsense2020_v130/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd> 
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ui/bd_176265c9.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/xilinx_2017/Projects/gsense2020_v130/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.H_CNT {4095}] [get_bd_cells StoreImg_0]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/storeimg_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx_2017/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/DOING/06-ip/package_ip_1/usr_file'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1954.465 ; gain = 1.824
+update_compile_order -fileset sources_1
+close_project
+current_project gsense2020_v130
+save_bd_design
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd> 
+generate_target all [get_files  D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/BRAM_CTL1' is ignored
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+WARNING: [BD 41-927] Following properties on pin /decoder_0/clk_rxg have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Block_RAM/addra'(32) to net 'BRAM_CTL1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/synth/BRAM_SPI.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/Block_RAM/addra'(32) to net 'BRAM_CTL1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/sim/BRAM_SPI.v
+VHDL Output written to : D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hdl/BRAM_SPI_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BRAM_CTL1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Block_RAM .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi_config_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block decoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_m .
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+The HP banks in device are 33 34 35 && local var set to 1 && devicetype is 3
+INFO: [BD 41-1029] Generation completed for the IP Integrator block receiver_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_recv .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StoreImg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_pc_1/BRAM_SPI_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_us_df_0/BRAM_SPI_auto_us_df_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/s00_couplers/auto_us_df .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_pc_0/BRAM_SPI_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hw_handoff/BRAM_SPI.hwh
+Generated Block Design Tcl file D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/hw_handoff/BRAM_SPI_bd.tcl
+Generated Hardware Definition File D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/synth/BRAM_SPI.hwdef
+generate_target: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1989.488 ; gain = 35.023
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_receiver_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_StoreImg_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_s00_regslice_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP BRAM_SPI_s00_regslice_0, cache-ID = 9cdab1ea5f28a9ac; cache size = 6.237 MB.
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP BRAM_SPI_auto_pc_1, cache-ID = c6584e970a93f91b; cache size = 6.237 MB.
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_us_df_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP BRAM_SPI_auto_us_df_0, cache-ID = 253cb8b0937be990; cache size = 6.238 MB.
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP BRAM_SPI_auto_pc_0, cache-ID = 99e873f9fc74ac74; cache size = 6.238 MB.
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+launch_runs -jobs 4 {BRAM_SPI_receiver_0_0_synth_1 BRAM_SPI_StoreImg_0_0_synth_1}
+[Wed Mar 30 18:34:06 2022] Launched BRAM_SPI_receiver_0_0_synth_1, BRAM_SPI_StoreImg_0_0_synth_1...
+Run output will be captured here:
+BRAM_SPI_receiver_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_receiver_0_0_synth_1/runme.log
+BRAM_SPI_StoreImg_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_StoreImg_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs BRAM_SPI]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar 30 18:34:46 2022] Launched BRAM_SPI_receiver_0_0_synth_1, BRAM_SPI_StoreImg_0_0_synth_1, synth_1...
+Run output will be captured here:
+BRAM_SPI_receiver_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_receiver_0_0_synth_1/runme.log
+BRAM_SPI_StoreImg_0_0_synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/BRAM_SPI_StoreImg_0_0_synth_1/runme.log
+synth_1: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/synth_1/runme.log
+[Wed Mar 30 18:34:47 2022] Launched impl_1...
+Run output will be captured here: D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/impl_1/runme.log
+current_project selectio_wiz_0_ex
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+file copy -force D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/impl_1/BRAM_SPI_wrapper.sysdef D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk/BRAM_SPI_wrapper.hdf
+
+launch_sdk -workspace D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk -hwspec D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk/BRAM_SPI_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk -hwspec D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk/BRAM_SPI_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 30 21:40:44 2022...

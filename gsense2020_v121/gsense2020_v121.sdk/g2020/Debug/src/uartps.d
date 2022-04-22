@@ -19,7 +19,8 @@ src/uartps.o src/uartps.o: ../src/uartps.c ../src/uartps.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xil_exception.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xparameters.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xparameters_ps.h \
- ../../g2020_bsp/ps7_cortexa9_0/include/xil_io.h ../src/sensor_ctrl.h
+ ../../g2020_bsp/ps7_cortexa9_0/include/xil_io.h ../src/sensor_ctrl.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/Control.h
 
 ../src/uartps.h:
 
@@ -66,3 +67,5 @@ src/uartps.o src/uartps.o: ../src/uartps.c ../src/uartps.h \
 ../../g2020_bsp/ps7_cortexa9_0/include/xil_io.h:
 
 ../src/sensor_ctrl.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/Control.h:

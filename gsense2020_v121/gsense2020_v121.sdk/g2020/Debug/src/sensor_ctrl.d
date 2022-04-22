@@ -14,7 +14,6 @@ src/sensor_ctrl.o src/sensor_ctrl.o: ../src/sensor_ctrl.c \
  ../../g2020_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xbram_hw.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xbram_hw.h \
- ../../g2020_bsp/ps7_cortexa9_0/include/spi_config.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/uartps.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xuartps.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xuartps_hw.h \
@@ -28,7 +27,10 @@ src/sensor_ctrl.o src/sensor_ctrl.o: ../src/sensor_ctrl.c \
  ../../g2020_bsp/ps7_cortexa9_0/include/xil_types.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xscutimer.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xscutimer_hw.h \
- ../../g2020_bsp/ps7_cortexa9_0/include/xtime_l.h ../src/sensor_ctrl.h
+ ../../g2020_bsp/ps7_cortexa9_0/include/xtime_l.h ../src/sensor_ctrl.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/Control.h ../src/spi.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xspips.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xspips_hw.h
 
 ../../g2020_bsp/ps7_cortexa9_0/include/sleep.h:
 
@@ -59,8 +61,6 @@ src/sensor_ctrl.o src/sensor_ctrl.o: ../src/sensor_ctrl.c \
 ../../g2020_bsp/ps7_cortexa9_0/include/xbram_hw.h:
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xbram_hw.h:
-
-../../g2020_bsp/ps7_cortexa9_0/include/spi_config.h:
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
@@ -95,3 +95,11 @@ src/sensor_ctrl.o src/sensor_ctrl.o: ../src/sensor_ctrl.c \
 ../../g2020_bsp/ps7_cortexa9_0/include/xtime_l.h:
 
 ../src/sensor_ctrl.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/Control.h:
+
+../src/spi.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/xspips.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/xspips_hw.h:

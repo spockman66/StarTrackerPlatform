@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="BRAM_SPI_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="&lt;None&gt;-device"/>
+	<item value="D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\g2020\bootimage\BOOT.bin" key="BRAM_SPI_wrapper_hw_platform_0-imgFile"/>
+	<item value="qspi_single" key="&lt;None&gt;-flashType"/>
+	<item value="true" key="BRAM_SPI_wrapper_hw_platform_0-blankCheck"/>
+	<item value="true" key="BRAM_SPI_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="" key="&lt;None&gt;-offSet"/>
+	<item value="Local" key="BRAM_SPI_wrapper_hw_platform_0-target"/>
+	<item value="" key="&lt;None&gt;-imgFile"/>
+	<item value="D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\zynq_fsbl\Debug\zynq_fsbl.elf" key="&lt;None&gt;-fsblFile"/>
+	<item value="D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.sdk\zynq_fsbl\Debug\zynq_fsbl.elf" key="BRAM_SPI_wrapper_hw_platform_0-fsblFile"/>
+	<item value="" key="BRAM_SPI_wrapper_hw_platform_0-offSet"/>
+	<item value="true" key="&lt;None&gt;-blankCheck"/>
+	<item value="Local" key="&lt;None&gt;-target"/>
+	<item value="qspi_single" key="BRAM_SPI_wrapper_hw_platform_0-flashType"/>
+	<item value="Auto Detect" key="BRAM_SPI_wrapper_hw_platform_0-device"/>
+	<item value="true" key="&lt;None&gt;-verifyFlash"/>
+</section>

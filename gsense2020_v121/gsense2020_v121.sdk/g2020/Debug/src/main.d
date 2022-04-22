@@ -24,9 +24,12 @@ src/main.o src/main.o: ../src/main.c \
  ../../g2020_bsp/ps7_cortexa9_0/include/xuartps.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xuartps_hw.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xplatform_info.h \
- ../../g2020_bsp/ps7_cortexa9_0/include/xil_printf.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/spi.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xspips.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xspips_hw.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xparameters_ps.h \
- ../src/sensor_ctrl.h ../../g2020_bsp/ps7_cortexa9_0/include/xil_cache.h \
+ ../src/sensor_ctrl.h ../../g2020_bsp/ps7_cortexa9_0/include/Control.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xil_cache.h \
  ../src/udp_transmission.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/lwip/init.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/lwip/opt.h \
@@ -109,9 +112,17 @@ src/main.o src/main.o: ../src/main.c \
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
+../src/spi.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/xspips.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/xspips_hw.h:
+
 ../../g2020_bsp/ps7_cortexa9_0/include/xparameters_ps.h:
 
 ../src/sensor_ctrl.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/Control.h:
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xil_cache.h:
 

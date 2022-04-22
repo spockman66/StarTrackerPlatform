@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="116"/>
-    <Option Name="WTModelSimExportSim" Val="116"/>
-    <Option Name="WTQuestaExportSim" Val="116"/>
-    <Option Name="WTIesExportSim" Val="116"/>
-    <Option Name="WTVcsExportSim" Val="116"/>
-    <Option Name="WTRivieraExportSim" Val="116"/>
-    <Option Name="WTActivehdlExportSim" Val="116"/>
+    <Option Name="WTXSimExportSim" Val="157"/>
+    <Option Name="WTModelSimExportSim" Val="157"/>
+    <Option Name="WTQuestaExportSim" Val="157"/>
+    <Option Name="WTIesExportSim" Val="157"/>
+    <Option Name="WTVcsExportSim" Val="157"/>
+    <Option Name="WTRivieraExportSim" Val="157"/>
+    <Option Name="WTActivehdlExportSim" Val="157"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -65,50 +65,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_auto_pc_0/BRAM_SPI_auto_pc_0.xci">
-          <Proxy FileSetName="BRAM_SPI_auto_pc_0"/>
+        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_Control_0_0/BRAM_SPI_Control_0_0.xci">
+          <Proxy FileSetName="BRAM_SPI_Control_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_auto_us_df_0/BRAM_SPI_auto_us_df_0.xci">
-          <Proxy FileSetName="BRAM_SPI_auto_us_df_0"/>
+        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_receiver_hw_0_0/BRAM_SPI_receiver_hw_0_0.xci">
+          <Proxy FileSetName="BRAM_SPI_receiver_hw_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0.xci">
-          <Proxy FileSetName="BRAM_SPI_proc_sys_reset_recv_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_receiver_0_0/BRAM_SPI_receiver_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_receiver_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_xbar_0/BRAM_SPI_xbar_0.xci">
-          <Proxy FileSetName="BRAM_SPI_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_s00_regslice_0/BRAM_SPI_s00_regslice_0.xci">
-          <Proxy FileSetName="BRAM_SPI_s00_regslice_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_decoder_0_0/BRAM_SPI_decoder_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_decoder_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_StoreImg_0_0/BRAM_SPI_StoreImg_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_StoreImg_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_auto_pc_1/BRAM_SPI_auto_pc_1.xci">
-          <Proxy FileSetName="BRAM_SPI_auto_pc_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_clk_wiz_0_0/BRAM_SPI_clk_wiz_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_processing_system7_0_0/BRAM_SPI_processing_system7_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_spi_config_0_0/BRAM_SPI_spi_config_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_spi_config_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_axi_bram_ctrl_0_0/BRAM_SPI_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_axi_bram_ctrl_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_blk_mem_gen_0_0/BRAM_SPI_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="BRAM_SPI_blk_mem_gen_0_0"/>
+        <CompFileExtendedInfo CompFileName="BRAM_SPI.bd" FileRelPathName="ip/BRAM_SPI_StoreImg_0_1/BRAM_SPI_StoreImg_0_1.xci">
+          <Proxy FileSetName="BRAM_SPI_StoreImg_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/BRAM_SPI_wrapper.v">
@@ -153,93 +117,21 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
-    <FileSet Name="BRAM_SPI_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_processing_system7_0_0">
+    <FileSet Name="BRAM_SPI_Control_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_Control_0_0">
       <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_processing_system7_0_0"/>
+        <Option Name="TopModule" Val="BRAM_SPI_Control_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="BRAM_SPI_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_axi_bram_ctrl_0_0">
+    <FileSet Name="BRAM_SPI_receiver_hw_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_receiver_hw_0_0">
       <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_axi_bram_ctrl_0_0"/>
+        <Option Name="TopModule" Val="BRAM_SPI_receiver_hw_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="BRAM_SPI_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_blk_mem_gen_0_0">
+    <FileSet Name="BRAM_SPI_StoreImg_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_StoreImg_0_1">
       <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_blk_mem_gen_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_spi_config_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_spi_config_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_spi_config_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_clk_wiz_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_clk_wiz_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_xbar_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_decoder_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_decoder_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_decoder_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_proc_sys_reset_recv_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_proc_sys_reset_recv_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_proc_sys_reset_recv_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_receiver_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_receiver_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_receiver_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_proc_sys_reset_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_proc_sys_reset_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_StoreImg_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_StoreImg_0_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_StoreImg_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_s00_regslice_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_s00_regslice_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_s00_regslice_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_auto_pc_1">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_auto_pc_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_auto_us_df_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_auto_us_df_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_auto_us_df_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="BRAM_SPI_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/BRAM_SPI_auto_pc_0">
-      <Config>
-        <Option Name="TopModule" Val="BRAM_SPI_auto_pc_0"/>
+        <Option Name="TopModule" Val="BRAM_SPI_StoreImg_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -272,7 +164,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_processing_system7_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_processing_system7_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_processing_system7_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="BRAM_SPI_Control_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_Control_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_Control_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_Control_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
@@ -281,126 +173,22 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_axi_bram_ctrl_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="BRAM_SPI_receiver_hw_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_receiver_hw_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_receiver_hw_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_receiver_hw_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_blk_mem_gen_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="BRAM_SPI_StoreImg_0_1_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_StoreImg_0_1" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_StoreImg_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_StoreImg_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_spi_config_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_spi_config_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_spi_config_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_spi_config_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_clk_wiz_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_clk_wiz_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_clk_wiz_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_xbar_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_xbar_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_xbar_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_decoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_decoder_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_decoder_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_decoder_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_proc_sys_reset_recv_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_proc_sys_reset_recv_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_proc_sys_reset_recv_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_proc_sys_reset_recv_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_receiver_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_receiver_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_receiver_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_receiver_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_proc_sys_reset_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_proc_sys_reset_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_StoreImg_0_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_StoreImg_0_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_StoreImg_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_StoreImg_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_s00_regslice_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_s00_regslice_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_s00_regslice_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_s00_regslice_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_auto_pc_1" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_pc_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_auto_pc_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_us_df_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_auto_us_df_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_us_df_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_auto_us_df_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="BRAM_SPI_auto_pc_0" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_pc_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/BRAM_SPI_auto_pc_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -424,7 +212,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_processing_system7_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_processing_system7_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="BRAM_SPI_Control_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_Control_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_Control_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
@@ -440,9 +228,11 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_axi_bram_ctrl_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="BRAM_SPI_receiver_hw_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_receiver_hw_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_receiver_hw_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -456,201 +246,11 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="BRAM_SPI_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_blk_mem_gen_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
+    <Run Id="BRAM_SPI_StoreImg_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_StoreImg_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_StoreImg_0_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_spi_config_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_spi_config_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_spi_config_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_clk_wiz_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_clk_wiz_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_xbar_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_xbar_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_decoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_decoder_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_decoder_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_proc_sys_reset_recv_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_proc_sys_reset_recv_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_proc_sys_reset_recv_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_receiver_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_receiver_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_receiver_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_proc_sys_reset_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_proc_sys_reset_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_StoreImg_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_StoreImg_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_StoreImg_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_s00_regslice_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_s00_regslice_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_s00_regslice_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_pc_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_auto_pc_1_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_us_df_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_us_df_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_auto_us_df_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="BRAM_SPI_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z035ffg676-2" ConstrsSet="BRAM_SPI_auto_pc_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="BRAM_SPI_auto_pc_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

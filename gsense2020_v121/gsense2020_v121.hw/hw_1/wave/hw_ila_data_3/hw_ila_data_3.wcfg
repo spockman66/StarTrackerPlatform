@@ -10,32 +10,73 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="98089fs"></ZoomEndTime>
-      <Cursor1Time time="5000fs"></Cursor1Time>
+      <ZoomEndTime time="9690001fs"></ZoomEndTime>
+      <Cursor1Time time="2840000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="198"></NameColumnWidth>
-      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+      <ValueColumnWidth column_width="70"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
-   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/ch0/xhs_ddd" type="logic">
-      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/ch0/xhs_ddd</obj_property>
-      <obj_property name="ObjectShortName">xhs_ddd</obj_property>
+   <WVObjectSize size="8" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0/inst/recv/rd0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0/inst/recv/rd0</obj_property>
+      <obj_property name="ObjectShortName">rd0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr0" type="logic">
-      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr0</obj_property>
-      <obj_property name="ObjectShortName">wr0</obj_property>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0/inst/recv/rd1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0/inst/recv/rd1</obj_property>
+      <obj_property name="ObjectShortName">rd1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr1" type="logic">
-      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr1</obj_property>
-      <obj_property name="ObjectShortName">wr1</obj_property>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0/inst/recv/rd2" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0/inst/recv/rd2</obj_property>
+      <obj_property name="ObjectShortName">rd2</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr2" type="logic">
-      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr2</obj_property>
-      <obj_property name="ObjectShortName">wr2</obj_property>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0/inst/recv/rd3" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0/inst/recv/rd3</obj_property>
+      <obj_property name="ObjectShortName">rd3</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="BRAM_SPI_i/receiver_0/inst/recv/wr3" type="logic">
-      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_0/inst/recv/wr3</obj_property>
-      <obj_property name="ObjectShortName">wr3</obj_property>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0_data_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0_data_valid</obj_property>
+      <obj_property name="ObjectShortName">receiver_hw_0_data_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="BRAM_SPI_i/receiver_hw_0_img" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">BRAM_SPI_i/receiver_hw_0_img[31:0]</obj_property>
+      <obj_property name="ObjectShortName">receiver_hw_0_img[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_2_pos_x" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_2_pos_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_2_pos_x[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_2_pos_y" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_2_pos_y[11:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_2_pos_y[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>

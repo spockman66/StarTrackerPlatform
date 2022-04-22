@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Thu Mar 17 08:50:30 2022
+//Date        : Fri Apr 22 09:47:43 2022
 //Host        : kickassWT running 64-bit major release  (build 9200)
 //Command     : generate_target BRAM_SPI_wrapper.bd
 //Design      : BRAM_SPI_wrapper
@@ -31,7 +31,6 @@ module BRAM_SPI_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    clk_20m,
     clk_in_n,
     clk_in_p,
     clk_out,
@@ -45,7 +44,10 @@ module BRAM_SPI_wrapper
     spi_out,
     spi_read,
     spi_write,
-    sys_rst_n);
+    sys_rst_n,
+    temp_sck,
+    temp_sdi,
+    temp_ss);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -67,7 +69,6 @@ module BRAM_SPI_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output clk_20m;
   input clk_in_n;
   input clk_in_p;
   output clk_out;
@@ -82,6 +83,9 @@ module BRAM_SPI_wrapper
   output spi_read;
   output spi_write;
   output sys_rst_n;
+  output temp_sck;
+  input temp_sdi;
+  output temp_ss;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -104,7 +108,6 @@ module BRAM_SPI_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire clk_20m;
   wire clk_in_n;
   wire clk_in_p;
   wire clk_out;
@@ -119,6 +122,9 @@ module BRAM_SPI_wrapper
   wire spi_read;
   wire spi_write;
   wire sys_rst_n;
+  wire temp_sck;
+  wire temp_sdi;
+  wire temp_ss;
 
   BRAM_SPI BRAM_SPI_i
        (.DDR_addr(DDR_addr),
@@ -142,7 +148,6 @@ module BRAM_SPI_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .clk_20m(clk_20m),
         .clk_in_n(clk_in_n),
         .clk_in_p(clk_in_p),
         .clk_out(clk_out),
@@ -156,5 +161,8 @@ module BRAM_SPI_wrapper
         .spi_out(spi_out),
         .spi_read(spi_read),
         .spi_write(spi_write),
-        .sys_rst_n(sys_rst_n));
+        .sys_rst_n(sys_rst_n),
+        .temp_sck(temp_sck),
+        .temp_sdi(temp_sdi),
+        .temp_ss(temp_ss));
 endmodule

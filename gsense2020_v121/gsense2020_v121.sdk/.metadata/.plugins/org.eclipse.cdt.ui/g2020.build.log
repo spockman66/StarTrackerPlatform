@@ -1,8 +1,8 @@
-11:48:33 **** Incremental Build of configuration Debug for project g2020 ****
+10:23:14 **** Auto Build of configuration Debug for project g2020 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-11:48:34 Build Finished (took 481ms)
+10:23:15 Build Finished (took 530ms)
 

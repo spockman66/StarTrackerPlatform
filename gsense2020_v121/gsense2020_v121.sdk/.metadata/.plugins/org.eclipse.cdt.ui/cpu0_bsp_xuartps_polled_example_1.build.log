@@ -1,0 +1,8 @@
+21:11:09 **** Auto Build of configuration Debug for project cpu0_bsp_xuartps_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+21:11:09 Build Finished (took 389ms)
+

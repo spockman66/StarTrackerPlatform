@@ -27,9 +27,10 @@ src/udp_transmission.o src/udp_transmission.o: ../src/udp_transmission.c \
  ../../g2020_bsp/ps7_cortexa9_0/include/netif/xadapter.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/netif/xtopology.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xil_types.h ../src/sensor_ctrl.h \
- ../src/timer_intr.h ../../g2020_bsp/ps7_cortexa9_0/include/xadcps.h \
- ../../g2020_bsp/ps7_cortexa9_0/include/xil_assert.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/Control.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xstatus.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/timer_intr.h \
+ ../../g2020_bsp/ps7_cortexa9_0/include/xadcps.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xadcps_hw.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xscugic.h \
  ../../g2020_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
@@ -97,13 +98,15 @@ src/udp_transmission.o src/udp_transmission.o: ../src/udp_transmission.c \
 
 ../src/sensor_ctrl.h:
 
-../src/timer_intr.h:
+../../g2020_bsp/ps7_cortexa9_0/include/Control.h:
 
-../../g2020_bsp/ps7_cortexa9_0/include/xadcps.h:
+../../g2020_bsp/ps7_cortexa9_0/include/xstatus.h:
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xil_assert.h:
 
-../../g2020_bsp/ps7_cortexa9_0/include/xstatus.h:
+../src/timer_intr.h:
+
+../../g2020_bsp/ps7_cortexa9_0/include/xadcps.h:
 
 ../../g2020_bsp/ps7_cortexa9_0/include/xadcps_hw.h:
 

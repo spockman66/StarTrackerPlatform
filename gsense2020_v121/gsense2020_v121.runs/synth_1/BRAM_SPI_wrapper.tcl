@@ -16,6 +16,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param simulator.modelsimInstallPath D:/software_kits/modelsim_10.6d/win64
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z035ffg676-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -42,16 +46,16 @@ set_property used_in_implementation false [get_files -all d:/xilinx_2017/Project
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/selectio_wiz_0_1/selectio_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/selectio_wiz_0_1/selectio_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_0/src/fifo_generator_for_store_1/fifo_generator_for_store.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/fifo_generator_for_store.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/fifo_generator_channel/fifo_generator_channel.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/fifo_generator_channel/fifo_generator_channel_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/selectio_wiz_0_1/selectio_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/selectio_wiz_0_1/selectio_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_s00_regslice_0/BRAM_SPI_s00_regslice_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_pc_1/BRAM_SPI_auto_pc_1_ooc.xdc]
 set_property used_in_synthesis false [get_files -all d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_auto_us_df_0/BRAM_SPI_auto_us_df_0_clocks.xdc]

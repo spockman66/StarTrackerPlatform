@@ -1,0 +1,427 @@
+
+*** Running vivado
+    with args -log BRAM_SPI_spi_config_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BRAM_SPI_spi_config_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source BRAM_SPI_spi_config_0_0.tcl -notrace
+Command: synth_design -top BRAM_SPI_spi_config_0_0 -part xc7z035ffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 433.160 ; gain = 105.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BRAM_SPI_spi_config_0_0' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_spi_config_0_0/synth/BRAM_SPI_spi_config_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'spi_config_v1_0' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'spi_config_v1_0_S00_AXI' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0_S00_AXI.v:253]
+INFO: [Synth 8-226] default block is never used [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0_S00_AXI.v:394]
+INFO: [Synth 8-638] synthesizing module 'bram_rd' [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/src/bram_rd.v:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter SPI_CONFIG_DONE bound to: 3'b001 
+	Parameter WAIT1 bound to: 3'b010 
+	Parameter WAIT2 bound to: 3'b011 
+	Parameter ALL_DONE bound to: 3'b100 
+	Parameter CNT_10US bound to: 16'b0000000111110100 
+	Parameter CNT_120US bound to: 16'b0001011101110000 
+	Parameter CNT_1000US bound to: 16'b1100001101010000 
+	Parameter RD_LEN bound to: 6'b100000 
+	Parameter SPI_IDLE bound to: 4'b0000 
+	Parameter SPI_WR bound to: 4'b0001 
+	Parameter HOLD bound to: 4'b0010 
+	Parameter SPI_RD bound to: 4'b0011 
+	Parameter SPI_WR_RAM bound to: 4'b0100 
+	Parameter VERIFY_ADDR bound to: 11'b00001010000 
+	Parameter start_addr bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/src/bram_rd.v:27]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "true" *) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/src/bram_rd.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/src/bram_rd.v:117]
+INFO: [Synth 8-256] done synthesizing module 'bram_rd' (1#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/src/bram_rd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'spi_config_v1_0_S00_AXI' (2#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'spi_config_v1_0' (3#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/4c82/hdl/spi_config_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_SPI_spi_config_0_0' (4#1) [d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_spi_config_0_0/synth/BRAM_SPI_spi_config_0_0.v:57]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port reserved
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[31]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[30]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[29]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[28]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[15]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design spi_config_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 486.289 ; gain = 158.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 486.289 ; gain = 158.828
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 905.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 905.555 ; gain = 578.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 905.555 ; gain = 578.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 905.555 ; gain = 578.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pwr_up_fsm_reg' in module 'bram_rd'
+INFO: [Synth 8-5546] ROM "fpga_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sys_rst_n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "all_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "spi_config_fsm" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ram_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ram_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "spi_config_ing" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "spi_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "spi_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "counter2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "counter2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_read_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "loc_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+         SPI_CONFIG_DONE |                              001 |                              001
+                   WAIT1 |                              010 |                              010
+                   WAIT2 |                              011 |                              011
+                ALL_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pwr_up_fsm_reg' using encoding 'sequential' in module 'bram_rd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 905.555 ; gain = 578.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input    256 Bit        Muxes := 2     
+	   2 Input    256 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 9     
+	   6 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 3     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   5 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bram_rd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input    256 Bit        Muxes := 2     
+	   2 Input    256 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 5     
+	   6 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	   5 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module spi_config_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "fpga_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sys_rst_n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "all_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_read_data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design bram_rd has unconnected port reserved
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[31]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[30]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[29]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[28]
+WARNING: [Synth 8-3331] design bram_rd has unconnected port decoder_reg[15]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design BRAM_SPI_spi_config_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/spi_config_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/spi_config_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/spi_config_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/spi_config_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/spi_config_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/spi_config_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/spi_config_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module BRAM_SPI_spi_config_0_0.
+INFO: [Synth 8-3886] merging instance 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[0]' (FDCE_1) to 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[1]' (FDCE_1) to 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[2]' (FDCE_1) to 'inst/spi_config_v1_0_S00_AXI_inst/config_module/ram_we_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (ram_addr_reg[0]) is unused and will be removed from module bram_rd.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 905.555 ; gain = 578.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 911.324 ; gain = 583.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 912.293 ; gain = 584.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT1   |     6|
+|3     |LUT2   |    39|
+|4     |LUT3   |     8|
+|5     |LUT4   |   271|
+|6     |LUT5   |   118|
+|7     |LUT6   |    90|
+|8     |FDCE   |   414|
+|9     |FDC_1  |     4|
+|10    |FDPE   |     8|
+|11    |FDRE   |   169|
+|12    |FDSE   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  1140|
+|2     |  inst                           |spi_config_v1_0         |  1140|
+|3     |    spi_config_v1_0_S00_AXI_inst |spi_config_v1_0_S00_AXI |  1140|
+|4     |      config_module              |bram_rd                 |   909|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 936.527 ; gain = 609.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 936.527 ; gain = 189.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 936.527 ; gain = 609.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  FDC_1 => FDCE (inverted pins: C): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 940.844 ; gain = 622.098
+INFO: [Common 17-1381] The checkpoint 'D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/BRAM_SPI_spi_config_0_0_synth_1/BRAM_SPI_spi_config_0_0.dcp' has been generated.

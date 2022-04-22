@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 30 15:31:15 2022
+# Process ID: 9316
+# Current directory: D:/xilinx_2017/Projects/gsense2020_v121
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13580 D:\xilinx_2017\Projects\gsense2020_v121\gsense2020_v121.xpr
+# Log file: D:/xilinx_2017/Projects/gsense2020_v121/vivado.log
+# Journal file: D:/xilinx_2017/Projects/gsense2020_v121\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.xpr
+update_compile_order -fileset sources_1
+save_project_as gsense2020_v130 D:/xilinx_2017/Projects/gsense2020_v130 -force
+open_bd_design {D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd}
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {16.750} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.750} CONFIG.MMCM_CLKOUT0_PHASE {0.000} CONFIG.MMCM_CLKOUT1_DIVIDE {67} CONFIG.CLKOUT1_JITTER {164.342} CONFIG.CLKOUT1_PHASE_ERROR {116.757} CONFIG.CLKOUT2_JITTER {230.134} CONFIG.CLKOUT2_PHASE_ERROR {116.757}] [get_ips clk_wiz_0]
+generate_target all [get_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci]
+export_ip_user_files -of_objects [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/clk_wiz_0_1/clk_wiz_0.xci] -directory d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files -ipstatic_source_dir d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/modelsim} {questa=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/questa} {riviera=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/riviera} {activehdl=d:/xilinx_2017/projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project/receiver_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v] -no_script -reset -force -quiet
+remove_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+update_compile_order -fileset sources_1
+current_project receiver_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 94 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+open_project D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.xpr
+upgrade_ip -vlnv xilinx.com:user:receiver:1.0 [get_ips  receiver_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips receiver_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci]
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+upgrade_ip -vlnv xilinx.com:user:decoder:1.0 [get_ips  decoder_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips decoder_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci]
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/decoder_0/decoder_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_simulation
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+update_compile_order -fileset sources_1
+current_project StoreImg_v1_0_project
+current_project selectio_wiz_0_ex
+current_project StoreImg_v1_0_project
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property value_validation_type range_long [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1024 [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 4095 [ipx::get_user_parameters H_CNT -of_objects [ipx::current_core]]
+ipgui::add_param -name {H_CNT} -component [ipx::current_core] -display_name {H Cnt} -show_label {true} -show_range {true} -widget {}
+set_property value_validation_type range_long [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_minimum 1024 [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+set_property value_validation_range_maximum 4095 [ipx::get_user_parameters V_CNT -of_objects [ipx::current_core]]
+ipgui::add_param -name {V_CNT} -component [ipx::current_core] -display_name {V Cnt} -show_label {true} -show_range {true} -widget {}
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+current_project selectio_wiz_0_ex
+current_project receiver_v1_0_project
+export_ip_user_files -of_objects  [get_files d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v] -no_script -reset -force -quiet
+remove_files  d:/DOING/06-ip/package_ip_1/usr_file/receiver/src/ser2par.v
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+launch_simulation
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+current_project gsense2020_v130
+run 100 us
+run 100 us
+run 100 ms
+close_sim
+current_project selectio_wiz_0_ex
+upgrade_ip [get_ips  {interface_0 receiver_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {interface_0 receiver_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/interface_0/interface_0.xci D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci}]
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+update_compile_order -fileset sources_1
+ipx::remove_file src/ser2par.v [ipx::get_file_groups xilinx_anylanguagebehavioralsimulation -of_objects [ipx::current_core]]
+ipx::remove_file src/ser2par.v [ipx::get_file_groups xilinx_anylanguagesynthesis -of_objects [ipx::current_core]]
+set_property core_revision 95 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:receiver:1.0 [get_ips  receiver_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips receiver_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci]
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sources_1/ip/receiver_0/receiver_0.xci] -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+close_project
+launch_simulation
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+run 100 ms
+close_sim
+current_project gsense2020_v130
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project selectio_wiz_0_ex
+current_project gsense2020_v130
+open_bd_design {D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd}
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name receiver_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/receiver_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/receiver/component.xml
+update_compile_order -fileset sources_1
+current_project selectio_wiz_0_ex
+report_ip_status -name ip_status 
+close_project
+open_project D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.xpr
+launch_simulation
+open_wave_config D:/xilinx_2017/Projects/CH05_PS_EMIO/selectio_wiz_0_ex/selectio_wiz_0_ex.srcs/sim_1/imports/selectio_wiz_0_ex/selectio_wiz_0_tb_behav.wcfg
+source selectio_wiz_0_tb.tcl
+current_project receiver_v1_0_project
+current_project selectio_wiz_0_ex
+run 100 ms
+current_project receiver_v1_0_project
+current_project gsense2020_v130
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+update_compile_order -fileset sources_1
+current_project receiver_v1_0_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project StoreImg_v1_0_project
+current_project receiver_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 96 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\receiver\xilinx.com_user_receiver_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+current_project gsense2020_v130
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_receiver_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_StoreImg_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_s00_regslice_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_us_df_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+launch_runs -jobs 4 {BRAM_SPI_receiver_0_0_synth_1 BRAM_SPI_StoreImg_0_0_synth_1 BRAM_SPI_s00_regslice_0_synth_1 BRAM_SPI_auto_pc_1_synth_1 BRAM_SPI_auto_us_df_0_synth_1 BRAM_SPI_auto_pc_0_synth_1}
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {d:\DOING\06-ip\package_ip_1\usr_file\StoreImg\xilinx.com_user_StoreImg_1.0.zip} [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/DOING/06-ip/package_ip_1/usr_file
+current_project gsense2020_v130
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project selectio_wiz_0_ex
+current_project gsense2020_v130
+upgrade_ip [get_ips  {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {BRAM_SPI_StoreImg_0_0 BRAM_SPI_receiver_0_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.H_CNT {4095}] [get_bd_cells StoreImg_0]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name StoreImg_v1_0_project -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.tmp/StoreImg_v1_0_project d:/DOING/06-ip/package_ip_1/usr_file/StoreImg/component.xml
+update_compile_order -fileset sources_1
+close_project
+current_project gsense2020_v130
+save_bd_design
+generate_target all [get_files  D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_receiver_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_StoreImg_0_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_s00_regslice_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_1] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_us_df_0] }
+catch { config_ip_cache -export [get_ips -all BRAM_SPI_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd]
+launch_runs -jobs 4 {BRAM_SPI_receiver_0_0_synth_1 BRAM_SPI_StoreImg_0_0_synth_1}
+export_simulation -of_objects [get_files D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.srcs/sources_1/bd/BRAM_SPI/BRAM_SPI.bd] -directory D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/sim_scripts -ip_user_files_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files -ipstatic_source_dir D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/modelsim} {questa=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/questa} {riviera=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/riviera} {activehdl=D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs BRAM_SPI]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project selectio_wiz_0_ex
+close_sim
+close_project
+file copy -force D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.runs/impl_1/BRAM_SPI_wrapper.sysdef D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk/BRAM_SPI_wrapper.hdf
+
+launch_sdk -workspace D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk -hwspec D:/xilinx_2017/Projects/gsense2020_v130/gsense2020_v130.sdk/BRAM_SPI_wrapper.hdf

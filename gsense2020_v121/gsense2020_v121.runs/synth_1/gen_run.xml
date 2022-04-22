@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1647503191">
+<GenRun Id="synth_1" LaunchPart="xc7z035ffg676-2" LaunchTime="1650592930">
   <File Type="PA-TCL" Name="BRAM_SPI_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="BRAM_SPI_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BRAM_SPI_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="BRAM_SPI_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="BRAM_SPI_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="BRAM_SPI_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="BRAM_SPI_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BRAM_SPI_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BRAM_SPI_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/BRAM_SPI/BRAM_SPI.bd">
@@ -51,19 +54,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_proc_sys_reset_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_proc_sys_reset_recv_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_blk_mem_gen_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_spi_config_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_axi_bram_ctrl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_receiver_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_decoder_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_auto_us_df_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_StoreImg_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_s00_regslice_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_Control_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_StoreImg_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="BRAM_SPI_receiver_hw_0_0"/>
 </GenRun>

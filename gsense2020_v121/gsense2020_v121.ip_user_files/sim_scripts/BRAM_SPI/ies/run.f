@@ -7,14 +7,10 @@
   "D:/xilinx_2017/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_processing_system7_0_0/BRAM_SPI_processing_system7_0_0_sim_netlist.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_axi_bram_ctrl_0_0/BRAM_SPI_axi_bram_ctrl_0_0_sim_netlist.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_blk_mem_gen_0_0/BRAM_SPI_blk_mem_gen_0_0_sim_netlist.v" \
-  "../../../bd/BRAM_SPI/ipshared/5762/src/bram_rd.v" \
-  "../../../bd/BRAM_SPI/ipshared/5762/hdl/spi_config_v1_0_S00_AXI.v" \
-  "../../../bd/BRAM_SPI/ipshared/5762/hdl/spi_config_v1_0.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_spi_config_0_0/sim/BRAM_SPI_spi_config_0_0.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_clk_wiz_0_0/BRAM_SPI_clk_wiz_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_processing_system7_0_0/BRAM_SPI_processing_system7_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_axi_bram_ctrl_0_0/BRAM_SPI_axi_bram_ctrl_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_blk_mem_gen_0_0/BRAM_SPI_blk_mem_gen_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_clk_wiz_0_0/BRAM_SPI_clk_wiz_0_0_sim_netlist.v" \
 -endlib
 -makelib ies_lib/generic_baseblocks_v2_1_0 \
   "../../../../gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -42,21 +38,25 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/BRAM_SPI/ip/BRAM_SPI_xbar_0/sim/BRAM_SPI_xbar_0.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_decoder_0_0/BRAM_SPI_decoder_0_0_sim_netlist.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0_sim_netlist.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/BRAM_SPI_receiver_0_0_sim_netlist.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/selectio_wiz_0_1/selectio_wiz_0.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/clk_wiz_0_1/clk_wiz_0.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
-  "d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.srcs/sources_1/bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_recv_0/BRAM_SPI_proc_sys_reset_recv_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_proc_sys_reset_0_0/BRAM_SPI_proc_sys_reset_0_0_sim_netlist.v" \
+  "../../../bd/BRAM_SPI/ipshared/cdb1/hdl/Control_v1_0_S_AXI_CTRL.v" \
+  "../../../bd/BRAM_SPI/ipshared/cdb1/src/bram_rd.v" \
+  "../../../bd/BRAM_SPI/ipshared/cdb1/src/decoder.v" \
+  "../../../bd/BRAM_SPI/ipshared/cdb1/hdl/Control_v1_0.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_Control_0_0/sim/BRAM_SPI_Control_0_0.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/src/fifo_generator_for_store_1/sim/fifo_generator_for_store.v" \
+  "../../../bd/BRAM_SPI/ipshared/b332/hdl/MSXBO_FDMA_v1_0_M00_AXI.v" \
+  "../../../bd/BRAM_SPI/ipshared/b332/src/interface.v" \
+  "../../../bd/BRAM_SPI/ipshared/b332/src/StoreImg.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_1/sim/BRAM_SPI_StoreImg_0_1.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/fifo_generator_channel/sim/fifo_generator_channel.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/selectio_wiz_0_1/selectio_wiz_0_selectio_wiz.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/selectio_wiz_0_1/selectio_wiz_0.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/src/clk_wiz_0_1/clk_wiz_0.v" \
+  "../../../bd/BRAM_SPI/ip/BRAM_SPI_receiver_hw_0_0/BRAM_SPI_receiver_hw_0_0_sim_netlist.v" \
   "../../../bd/BRAM_SPI/sim/BRAM_SPI.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_0/src/fifo_generator_for_store_1/sim/fifo_generator_for_store.v" \
-  "../../../bd/BRAM_SPI/ipshared/313d/hdl/MSXBO_FDMA_v1_0_M00_AXI.v" \
-  "../../../bd/BRAM_SPI/ipshared/313d/src/interface.v" \
-  "../../../bd/BRAM_SPI/ipshared/313d/src/StoreImg.v" \
-  "../../../bd/BRAM_SPI/ip/BRAM_SPI_StoreImg_0_0/sim/BRAM_SPI_StoreImg_0_0.v" \
   "../../../bd/BRAM_SPI/ip/BRAM_SPI_s00_regslice_0/sim/BRAM_SPI_s00_regslice_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_15 \

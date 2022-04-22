@@ -1,0 +1,1290 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 22 09:47:33 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 22:41:53 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 49) to (Rev. 50)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 20:44:48 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 48) to (Rev. 49)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 19:01:22 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 47) to (Rev. 48)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 18:08:43 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 46) to (Rev. 47)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 16:57:45 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 45) to (Rev. 46)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 16:28:13 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 44) to (Rev. 45)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 11:58:25 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 43) to (Rev. 44)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 10:51:37 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 42) to (Rev. 43)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 21 10:44:13 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 41) to (Rev. 42)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Apr 20 08:47:45 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 40) to (Rev. 41)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Apr 19 21:00:39 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 39) to (Rev. 40)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Apr 19 20:56:09 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 38) to (Rev. 39)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 23:14:50 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0 (Rev. 24)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 23:13:45 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 37) to (Rev. 38)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 23:13:45 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 22:58:36 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 35) to (Rev. 37)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 15:41:02 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 34) to (Rev. 35)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_receiver_hw_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'frame_num'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 15:41:02 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0) from (Rev. 22) to (Rev. 23)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_StoreImg_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'frame_num'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 15:41:02 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_Control_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_Control_0_0 (xilinx.com:user:Control:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_Control_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'frame_num'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 10:43:55 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 33) to (Rev. 34)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Apr 18 10:35:01 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Apr 16 11:37:08 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 31) to (Rev. 32)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Apr 16 10:49:18 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 22:31:22 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 21:40:51 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 27) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 16:51:03 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 15:10:15 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 15:02:13 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 12:06:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Apr 15 08:52:36 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:25:13 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:19:27 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:17:44 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:12:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:10:42 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 21:08:16 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 16:07:56 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_Control_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_Control_0_0 (xilinx.com:user:Control:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_Control_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'train_req'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 16:03:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 6) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 16:03:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_Control_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_Control_0_0 (xilinx.com:user:Control:1.0) from (Rev. 5) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_Control_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'bw_done'
+
+-Upgrade has added port 'in_delay_tap_in'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 16:03:24 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 4) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'BRAM_SPI_receiver_hw_0_0'.
+
+
+-Upgrade has removed interface 'rst_n'
+
+-Upgrade has added interface 'clk_main' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'rst_n_main' (xilinx.com:signal:reset:1.0)
+
+-Upgrade has added interface 'rst_n_recv' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_receiver_hw_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'rst_n'
+
+-Upgrade has added port 'clk_main'
+
+-Upgrade has added port 'in_delay_tap_in'
+
+-Upgrade has added port 'in_delay_tap_out'
+
+-Upgrade has added port 'rst_n_main'
+
+-Upgrade has added port 'rst_n_recv'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Apr 14 16:03:24 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_Control_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_Control_0_0 (xilinx.com:user:Control:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_Control_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'bw_done'
+
+-Upgrade has added port 'train_req'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Apr 12 12:06:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Apr 12 11:29:14 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_hw_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_SPI_receiver_hw_0_0 (xilinx.com:user:receiver_hw:1.0) from (Rev. 1) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BRAM_SPI_receiver_hw_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'pos_x' width 12 differs from original width 11
+
+-Upgraded port 'pos_y' width 12 differs from original width 11
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Apr 12 10:34:47 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_StoreImg_0_1 (xilinx.com:user:StoreImg:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 30 14:31:11 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_0_0 (xilinx.com:user:receiver:1.0) from (Rev. 92) to (Rev. 93)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 30 13:51:26 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_0_0 (xilinx.com:user:receiver:1.0) from (Rev. 91) to (Rev. 92)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 29 11:56:37 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_0_0 (xilinx.com:user:receiver:1.0) from (Rev. 90) to (Rev. 91)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Mar 28 16:48:33 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_receiver_0_0 (xilinx.com:user:receiver:1.0) from (Rev. 89) to (Rev. 90)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 25 10:23:50 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_spi_config_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_spi_config_0_0 (xilinx.com:user:spi_config:1.2) from (Rev. 40) to (Rev. 41)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 25 09:34:02 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_spi_config_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_spi_config_0_0 (xilinx.com:user:spi_config:1.2) from (Rev. 39) to (Rev. 40)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Mar 24 16:42:40 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_spi_config_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_spi_config_0_0 (xilinx.com:user:spi_config:1.2) from (Rev. 38) to (Rev. 39)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 22 15:50:43 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_spi_config_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BRAM_SPI_spi_config_0_0 (xilinx.com:user:spi_config:1.2 (Rev. 38)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 22 15:50:22 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BRAM_SPI_StoreImg_0_0 (xilinx.com:user:StoreImg:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 18 10:32:39 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_StoreImg_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_StoreImg_0_0 (xilinx.com:user:StoreImg:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 18 10:22:04 2022
+| Host         : kickassWT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z035ffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_SPI_spi_config_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BRAM_SPI_spi_config_0_0 (xilinx.com:user:spi_config:1.2) from (Rev. 37) to (Rev. 38)
+

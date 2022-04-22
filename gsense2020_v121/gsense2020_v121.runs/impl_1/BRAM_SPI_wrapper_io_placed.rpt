@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date                      : Thu Mar 17 09:25:12 2022
+| Date                      : Fri Apr 22 10:04:39 2022
 | Host                      : kickassWT running 64-bit major release  (build 9200)
 | Command                   : report_io -file BRAM_SPI_wrapper_io_placed.rpt
 | Design                    : BRAM_SPI_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           180 |
+|           182 |
 +---------------+
 
 
@@ -157,7 +157,7 @@ Table of Contents
 | AD16       | cmos_dop[1]       | High Range       | IO_L15P_T2_DQS_12       | INPUT         | LVDS_25           |      12 |            |      | 100 Ohm Differential |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AD17       |                   | High Range       | VCCO_12                 | VCCO          |                   |      12 |            |      |                      |                      |      2.50 |            |           |          |      |                  |              |                   |              |
 | AD18       |                   | High Range       | IO_L17P_T2_13           | User IO       |                   |      13 |            |      |                      |                      |           |            |           |          |      |                  |              |                   |              |
-| AD19       |                   | High Range       | IO_L17N_T2_13           | User IO       |                   |      13 |            |      |                      |                      |           |            |           |          |      |                  |              |                   |              |
+| AD19       | temp_sdi          | High Range       | IO_L17N_T2_13           | INPUT         | LVCMOS25          |      13 |            |      |                      |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AD20       | sys_rst_n         | High Range       | IO_L13P_T2_MRCC_13      | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AD21       |                   | High Range       | IO_L13N_T2_MRCC_13      | User IO       |                   |      13 |            |      |                      |                      |           |            |           |          |      |                  |              |                   |              |
 | AD22       |                   |                  | GND                     | GND           |                   |         |            |      |                      |                      |       0.0 |            |           |          |      |                  |              |                   |              |
@@ -187,7 +187,7 @@ Table of Contents
 | AE20       | decoder[4]        | High Range       | IO_L16P_T2_13           | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AE21       | decoder[5]        | High Range       | IO_L16N_T2_13           | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AE22       | spi_write         | High Range       | IO_L7P_T1_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
-| AE23       |                   | High Range       | IO_L8P_T1_13            | User IO       |                   |      13 |            |      |                      |                      |           |            |           |          |      |                  |              |                   |              |
+| AE23       | temp_ss           | High Range       | IO_L8P_T1_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AE24       |                   | High Range       | VCCO_13                 | VCCO          |                   |      13 |            |      |                      |                      |      2.50 |            |           |          |      |                  |              |                   |              |
 | AE25       | ctr_sig_w[13]     | High Range       | IO_L3P_T0_DQS_13        | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AE26       | ctr_sig_w[14]     | High Range       | IO_L3N_T0_DQS_13        | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -213,7 +213,7 @@ Table of Contents
 | AF20       | spi_data          | High Range       | IO_L15N_T2_DQS_13       | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF21       |                   | High Range       | VCCO_13                 | VCCO          |                   |      13 |            |      |                      |                      |      2.50 |            |           |          |      |                  |              |                   |              |
 | AF22       | spi_read          | High Range       | IO_L7N_T1_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
-| AF23       | clk_20m           | High Range       | IO_L8N_T1_13            | TRISTATE      | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| AF23       | temp_sck          | High Range       | IO_L8N_T1_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF24       | ctr_sig_w[6]      | High Range       | IO_L5P_T0_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF25       | ctr_sig_w[0]      | High Range       | IO_L5N_T0_13            | OUTPUT        | LVCMOS25          |      13 |         12 | SLOW |                      |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AF26       |                   |                  | GND                     | GND           |                   |         |            |      |                      |                      |       0.0 |            |           |          |      |                  |              |                   |              |

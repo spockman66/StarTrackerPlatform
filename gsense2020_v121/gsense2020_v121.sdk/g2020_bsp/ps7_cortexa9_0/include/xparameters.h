@@ -23,6 +23,17 @@
 
 /******************************************************************/
 
+/* Definitions for driver CONTROL */
+#define XPAR_CONTROL_NUM_INSTANCES 1
+
+/* Definitions for peripheral CONTROL_0 */
+#define XPAR_CONTROL_0_DEVICE_ID 0
+#define XPAR_CONTROL_0_S_AXI_CTRL_BASEADDR 0x43C00000
+#define XPAR_CONTROL_0_S_AXI_CTRL_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver BRAM */
 #define XPAR_XBRAM_NUM_INSTANCES 1U
 
@@ -366,13 +377,23 @@
 
 /******************************************************************/
 
-/* Definitions for driver SPI_CONFIG */
-#define XPAR_SPI_CONFIG_NUM_INSTANCES 1
+/* Definitions for driver SPIPS */
+#define XPAR_XSPIPS_NUM_INSTANCES 1
 
-/* Definitions for peripheral SPI_CONFIG_0 */
-#define XPAR_SPI_CONFIG_0_DEVICE_ID 0
-#define XPAR_SPI_CONFIG_0_S00_AXI_BASEADDR 0x43C00000
-#define XPAR_SPI_CONFIG_0_S00_AXI_HIGHADDR 0x43C0FFFF
+/* Definitions for peripheral PS7_SPI_0 */
+#define XPAR_PS7_SPI_0_DEVICE_ID 0
+#define XPAR_PS7_SPI_0_BASEADDR 0xE0006000
+#define XPAR_PS7_SPI_0_HIGHADDR 0xE0006FFF
+#define XPAR_PS7_SPI_0_SPI_CLK_FREQ_HZ 166666672
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral PS7_SPI_0 */
+#define XPAR_XSPIPS_0_DEVICE_ID XPAR_PS7_SPI_0_DEVICE_ID
+#define XPAR_XSPIPS_0_BASEADDR 0xE0006000
+#define XPAR_XSPIPS_0_HIGHADDR 0xE0006FFF
+#define XPAR_XSPIPS_0_SPI_CLK_FREQ_HZ 166666672
 
 
 /******************************************************************/

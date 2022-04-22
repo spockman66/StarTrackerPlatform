@@ -39,7 +39,9 @@ module BRAM_SPI_wrapper
     cmos_dop,
     ctr_sig_w,
     decoder,
-    clk_20m,
+    temp_sck,
+    temp_sdi,
+    temp_ss,
     fpga_en,
     spi_clk,
     spi_data,
@@ -76,7 +78,9 @@ module BRAM_SPI_wrapper
   input [3:0]cmos_dop;
   output [17:0]ctr_sig_w;
   output [11:0]decoder;
-  output clk_20m;
+  input temp_sdi;
+  output temp_sck;
+  output temp_ss;
   output fpga_en;
   output spi_clk;
   output spi_data;
@@ -160,6 +164,9 @@ module BRAM_SPI_wrapper
         .ctr_sig_w(ctr_sig_w),
         .decoder(decoder),
         .fpga_en(fpga_en),
+        .temp_sck(temp_sck),
+        .temp_sdi(temp_sdi),
+        .temp_ss(temp_ss),
         .spi_clk(spi_clk),
         .spi_data(spi_data),
         .spi_out(spi_out),

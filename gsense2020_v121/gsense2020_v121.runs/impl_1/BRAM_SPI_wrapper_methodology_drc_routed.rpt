@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Mar 17 09:27:46 2022
+| Date         : Fri Apr 22 10:06:54 2022
 | Host         : kickassWT running 64-bit major release  (build 9200)
 | Command      : report_methodology -file BRAM_SPI_wrapper_methodology_drc_routed.rpt -pb BRAM_SPI_wrapper_methodology_drc_routed.pb -rpx BRAM_SPI_wrapper_methodology_drc_routed.rpx
 | Design       : BRAM_SPI_wrapper
@@ -20,20 +20,18 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_BRAM_SPI_wrapper
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 60
+             Violations found: 82
 +-----------+----------+-------------------------------------------------+------------+
 | Rule      | Severity | Description                                     | Violations |
 +-----------+----------+-------------------------------------------------+------------+
-| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 16         |
-| TIMING-6  | Warning  | No common primary clock between related clocks  | 3          |
-| TIMING-7  | Warning  | No common node between related clocks           | 3          |
-| TIMING-8  | Warning  | No common period between related clocks         | 3          |
-| TIMING-16 | Warning  | Large setup violation                           | 4          |
-| TIMING-18 | Warning  | Missing input or output delay                   | 8          |
-| XDCB-5    | Warning  | Runtime inefficient way to find pin objects     | 19         |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 4          |
+| TIMING-6  | Warning  | No common primary clock between related clocks  | 2          |
+| TIMING-7  | Warning  | No common node between related clocks           | 2          |
+| TIMING-8  | Warning  | No common period between related clocks         | 2          |
+| TIMING-16 | Warning  | Large setup violation                           | 68         |
 | REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF               | 4          |
 +-----------+----------+-------------------------------------------------+------------+
 
@@ -41,82 +39,22 @@ Table of Contents
 -----------------
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X41Y182 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X30Y207 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X36Y182 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X13Y211 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X37Y181 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X35Y217 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_2/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X37Y183 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#5 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X40Y184 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#6 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X41Y184 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#7 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X39Y184 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#8 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X39Y177 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#9 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X39Y176 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#10 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X39Y178 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#11 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X31Y185 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#12 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X31Y186 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#13 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X43Y181 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#14 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X43Y182 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#15 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X44Y182 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#16 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X42Y182 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X34Y215 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell BRAM_SPI_i/receiver_hw_0/inst/recv/fifo_3/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-6#1 Warning
@@ -125,11 +63,6 @@ The clocks clk_main_BRAM_SPI_clk_wiz_0_0 and clk_out_div_clk_wiz_0 are related (
 Related violations: <none>
 
 TIMING-6#2 Warning
-No common primary clock between related clocks  
-The clocks clk_out_div_clk_wiz_0 and clk_out2_BRAM_SPI_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_div_clk_wiz_0] -to [get_clocks clk_out2_BRAM_SPI_clk_wiz_0_0]
-Related violations: <none>
-
-TIMING-6#3 Warning
 No common primary clock between related clocks  
 The clocks clk_out_div_clk_wiz_0 and clk_recv_BRAM_SPI_clk_wiz_0_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_div_clk_wiz_0] -to [get_clocks clk_recv_BRAM_SPI_clk_wiz_0_0]
 Related violations: <none>
@@ -141,11 +74,6 @@ Related violations: <none>
 
 TIMING-7#2 Warning
 No common node between related clocks  
-The clocks clk_out_div_clk_wiz_0 and clk_out2_BRAM_SPI_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_div_clk_wiz_0] -to [get_clocks clk_out2_BRAM_SPI_clk_wiz_0_0]
-Related violations: <none>
-
-TIMING-7#3 Warning
-No common node between related clocks  
 The clocks clk_out_div_clk_wiz_0 and clk_recv_BRAM_SPI_clk_wiz_0_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_div_clk_wiz_0] -to [get_clocks clk_recv_BRAM_SPI_clk_wiz_0_0]
 Related violations: <none>
 
@@ -156,206 +84,367 @@ Related violations: <none>
 
 TIMING-8#2 Warning
 No common period between related clocks  
-The clocks clk_out_div_clk_wiz_0 and clk_out2_BRAM_SPI_clk_wiz_0_0 are found related (timed together) but have no common (expandable) period
-Related violations: <none>
-
-TIMING-8#3 Warning
-No common period between related clocks  
 The clocks clk_out_div_clk_wiz_0 and clk_recv_BRAM_SPI_clk_wiz_0_0 are found related (timed together) but have no common (expandable) period
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -5.827 ns between BRAM_SPI_i/decoder_0/inst/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_0/inst/recv/ch3/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.847 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/decoder_module/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -5.840 ns between BRAM_SPI_i/decoder_0/inst/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_0/inst/recv/ch0/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.858 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/decoder_module/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -5.842 ns between BRAM_SPI_i/decoder_0/inst/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_0/inst/recv/ch1/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.894 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[0]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/CNTVALUEIN[0] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -5.848 ns between BRAM_SPI_i/decoder_0/inst/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_0/inst/recv/ch2/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.894 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[15]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/CNTVALUEIN[0] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#1 Warning
-Missing input or output delay  
-An input delay is missing on cmos_don[0] relative to clock(s) clk_in_p
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -5.896 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[10]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/CNTVALUEIN[0] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#2 Warning
-Missing input or output delay  
-An input delay is missing on cmos_don[1] relative to clock(s) clk_in_p
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -5.927 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[6]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/CNTVALUEIN[1] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#3 Warning
-Missing input or output delay  
-An input delay is missing on cmos_don[2] relative to clock(s) clk_in_p
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -5.928 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[18]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/CNTVALUEIN[3] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#4 Warning
-Missing input or output delay  
-An input delay is missing on cmos_don[3] relative to clock(s) clk_in_p
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -5.928 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[19]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/CNTVALUEIN[4] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#5 Warning
-Missing input or output delay  
-An input delay is missing on cmos_dop[0] relative to clock(s) clk_in_p
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -5.929 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/CNTVALUEIN[3] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#6 Warning
-Missing input or output delay  
-An input delay is missing on cmos_dop[1] relative to clock(s) clk_in_p
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -5.929 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/CNTVALUEIN[0] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#7 Warning
-Missing input or output delay  
-An input delay is missing on cmos_dop[2] relative to clock(s) clk_in_p
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -5.930 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[17]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/CNTVALUEIN[2] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-TIMING-18#8 Warning
-Missing input or output delay  
-An input delay is missing on cmos_dop[3] relative to clock(s) clk_in_p
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -5.930 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/CNTVALUEIN[2] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#1 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '91' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 80)
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -5.930 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[4]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/CNTVALUEIN[4] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#2 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '92' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 81)
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -5.932 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[13]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/CNTVALUEIN[3] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#3 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '93' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 82)
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -5.932 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[14]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/CNTVALUEIN[4] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#4 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '80' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 63)
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -5.939 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[12]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/CNTVALUEIN[2] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#5 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '85' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 74)
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -5.963 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/decoder_module/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#6 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '86' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 75)
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -5.977 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[9]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/CNTVALUEIN[4] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#7 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCE/I_YESLUT6.U_SRLC16E/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '87' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 76)
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -6.012 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[7]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/CNTVALUEIN[2] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#8 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCE/I_YESLUT6.U_SRLC16E/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '88' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 77)
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -6.013 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[16]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/CNTVALUEIN[1] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#9 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCMPCE/I_YESLUT6.U_SRL32/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '78' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 60)
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -6.016 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[1]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/CNTVALUEIN[1] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#10 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCRST/I_YESLUT6.U_SRL32_*/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '89' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 78)
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -6.022 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[11]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/CNTVALUEIN[1] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#11 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/u_srl_drive/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '79' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 61)
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -6.046 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/decoder_module/xhs_out_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/xhs_d_reg/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#12 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WCE/I_YESLUT6.U_SRLC16E/CLK*" }]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '90' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 79)
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -6.070 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/slv_reg5_reg[8]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/CNTVALUEIN[3] (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#13 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WHCMPCE/I_YESLUT6.U_SRL32/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '83' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 72)
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -6.167 ns between BRAM_SPI_i/receiver_hw_0/inst/in_delay_reset_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].idelaye2_bus/LD (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#14 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WLCMPCE/I_YESLUT6.U_SRL32/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '84' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 73)
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -6.201 ns between BRAM_SPI_i/receiver_hw_0/inst/in_delay_reset_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].idelaye2_bus/LD (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#15 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/u_srl_drive/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '82' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 71)
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -6.350 ns between BRAM_SPI_i/receiver_hw_0/inst/in_delay_reset_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].idelaye2_bus/LD (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#16 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/u_srl_drive/CLK*"}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '81' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 70)
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -6.395 ns between BRAM_SPI_i/receiver_hw_0/inst/in_delay_reset_reg/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].idelaye2_bus/LD (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#17 Warning
-Runtime inefficient way to find pin objects  
-The option '-from : [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 40)
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -7.402 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[3]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#18 Warning
-Runtime inefficient way to find pin objects  
-The option '-to : [get_pins -hierarchical -filter {NAME =~ *allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/u_ila_0_CV.0/out/ila.xdc (Line: 40)
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -7.487 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/state_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
-XDCB-5#19 Warning
-Runtime inefficient way to find pin objects  
-The option 'objects : [get_pins -hierarchical -filter {NAME =~ "*BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK"}]' of constraint 'create_clock' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: d:/xilinx_2017/Projects/gsense2020_v121/gsense2020_v121.runs/impl_1/.Xil/Vivado-10136-kickassWT/dbg_hub_CV.0/out/xsdbm.xdc (Line: 5)
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -7.531 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[3]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -7.573 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -7.578 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[8]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/state_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -7.583 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[8]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/state_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -7.590 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[4]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[3]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -7.594 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/state_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -7.603 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[3]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -7.618 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[2]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -7.627 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[2]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -7.630 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -7.632 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[4]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/state_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -7.637 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[4]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/state_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -7.714 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/state_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -7.782 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -7.799 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -7.803 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[4]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[2]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -7.824 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/state_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -7.832 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -7.842 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[0]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -7.852 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -7.861 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[1]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[0]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -7.889 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[1]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[1]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -7.889 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[1]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[2]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -7.889 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[1]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[3]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -7.901 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch2/pos_reg[1]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -7.926 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[0]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -7.926 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[1]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -7.926 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[2]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -7.926 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[3]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch0/pos_reg[3]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -7.944 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[2]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[2]/D (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -7.949 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[0]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -7.949 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[1]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -7.949 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[2]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -7.949 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[5]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch3/pos_reg[3]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#65 Warning
+Large setup violation  
+There is a large setup violation of -8.081 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[0]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[0]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#66 Warning
+Large setup violation  
+There is a large setup violation of -8.081 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[0]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[1]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#67 Warning
+Large setup violation  
+There is a large setup violation of -8.081 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[0]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[3]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#68 Warning
+Large setup violation  
+There is a large setup violation of -8.106 ns between BRAM_SPI_i/Control_0/inst/AXI_CTRL_inst/trainning_word_reg[0]/C (clocked by clk_main_BRAM_SPI_clk_wiz_0_0) and BRAM_SPI_i/receiver_hw_0/inst/recv/ch1/pos_reg[2]/CE (clocked by clk_out_div_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 REQP-1959#1 Advisory
 connects_SERDES_RST_driver_not_FF  
-BRAM_SPI_i/receiver_0/inst/ser2par/inst/pins[0].iserdese2_master: The RST pin should only be driven by a Flip-flop.
+BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[0].iserdese2_master: The RST pin should only be driven by a Flip-flop.
 Related violations: <none>
 
 REQP-1959#2 Advisory
 connects_SERDES_RST_driver_not_FF  
-BRAM_SPI_i/receiver_0/inst/ser2par/inst/pins[1].iserdese2_master: The RST pin should only be driven by a Flip-flop.
+BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[1].iserdese2_master: The RST pin should only be driven by a Flip-flop.
 Related violations: <none>
 
 REQP-1959#3 Advisory
 connects_SERDES_RST_driver_not_FF  
-BRAM_SPI_i/receiver_0/inst/ser2par/inst/pins[2].iserdese2_master: The RST pin should only be driven by a Flip-flop.
+BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[2].iserdese2_master: The RST pin should only be driven by a Flip-flop.
 Related violations: <none>
 
 REQP-1959#4 Advisory
 connects_SERDES_RST_driver_not_FF  
-BRAM_SPI_i/receiver_0/inst/ser2par/inst/pins[3].iserdese2_master: The RST pin should only be driven by a Flip-flop.
+BRAM_SPI_i/receiver_hw_0/inst/ser2par/inst/pins[3].iserdese2_master: The RST pin should only be driven by a Flip-flop.
 Related violations: <none>
 
 

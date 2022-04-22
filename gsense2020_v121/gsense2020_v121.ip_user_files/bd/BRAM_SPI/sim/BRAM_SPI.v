@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Thu Mar 17 08:50:30 2022
+//Date        : Fri Apr 22 09:47:43 2022
 //Host        : kickassWT running 64-bit major release  (build 9200)
 //Command     : generate_target BRAM_SPI.bd
 //Design      : BRAM_SPI
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "BRAM_SPI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=BRAM_SPI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=4,da_bram_cntlr_cnt=2,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "BRAM_SPI.hwdef" *) 
+(* CORE_GENERATION_INFO = "BRAM_SPI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=BRAM_SPI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=4,da_bram_cntlr_cnt=2,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "BRAM_SPI.hwdef" *) 
 module BRAM_SPI
    (DDR_addr,
     DDR_ba,
@@ -32,7 +32,6 @@ module BRAM_SPI
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    clk_20m,
     clk_in_n,
     clk_in_p,
     clk_out,
@@ -46,7 +45,10 @@ module BRAM_SPI
     spi_out,
     spi_read,
     spi_write,
-    sys_rst_n);
+    sys_rst_n,
+    temp_sck,
+    temp_sdi,
+    temp_ss);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -68,7 +70,6 @@ module BRAM_SPI
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_20M CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_20M, CLK_DOMAIN /clk_wiz_0_clk_out1, FREQ_HZ 10000000, PHASE 0.0" *) output clk_20m;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_IN_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_IN_N, CLK_DOMAIN BRAM_SPI_clk_in_n, FREQ_HZ 100000000, PHASE 0.000" *) input clk_in_n;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_IN_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_IN_P, CLK_DOMAIN BRAM_SPI_clk_in_p, FREQ_HZ 100000000, PHASE 0.000" *) input clk_in_p;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_OUT CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_OUT, CLK_DOMAIN /clk_wiz_0_clk_out1, FREQ_HZ 120000000, PHASE 0.0" *) output clk_out;
@@ -77,13 +78,17 @@ module BRAM_SPI
   output [17:0]ctr_sig_w;
   output [11:0]decoder;
   output fpga_en;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SPI_CLK, CLK_DOMAIN BRAM_SPI_spi_config_0_0_spi_clk_out, FREQ_HZ 5000000, PHASE 0.000" *) output spi_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SPI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SPI_CLK, FREQ_HZ 100000000, PHASE 0.000" *) output spi_clk;
   output spi_data;
   input spi_out;
   output spi_read;
   output spi_write;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.SYS_RST_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.SYS_RST_N, POLARITY ACTIVE_LOW" *) output sys_rst_n;
+  output temp_sck;
+  input temp_sdi;
+  output temp_ss;
 
+  wire [0:0]ARESETN_1;
   wire [12:0]BRAM_CTL1_BRAM_PORTA_ADDR;
   wire BRAM_CTL1_BRAM_PORTA_CLK;
   wire [31:0]BRAM_CTL1_BRAM_PORTA_DIN;
@@ -91,43 +96,64 @@ module BRAM_SPI
   wire BRAM_CTL1_BRAM_PORTA_EN;
   wire BRAM_CTL1_BRAM_PORTA_RST;
   wire [3:0]BRAM_CTL1_BRAM_PORTA_WE;
-  wire [31:0]S00_AXI_1_ARADDR;
-  wire [1:0]S00_AXI_1_ARBURST;
-  wire [3:0]S00_AXI_1_ARCACHE;
-  wire [0:0]S00_AXI_1_ARID;
-  wire [7:0]S00_AXI_1_ARLEN;
-  wire S00_AXI_1_ARLOCK;
-  wire [2:0]S00_AXI_1_ARPROT;
-  wire [3:0]S00_AXI_1_ARQOS;
-  wire S00_AXI_1_ARREADY;
-  wire [2:0]S00_AXI_1_ARSIZE;
-  wire S00_AXI_1_ARVALID;
-  wire [31:0]S00_AXI_1_AWADDR;
-  wire [1:0]S00_AXI_1_AWBURST;
-  wire [3:0]S00_AXI_1_AWCACHE;
-  wire [0:0]S00_AXI_1_AWID;
-  wire [7:0]S00_AXI_1_AWLEN;
-  wire S00_AXI_1_AWLOCK;
-  wire [2:0]S00_AXI_1_AWPROT;
-  wire [3:0]S00_AXI_1_AWQOS;
-  wire S00_AXI_1_AWREADY;
-  wire [2:0]S00_AXI_1_AWSIZE;
-  wire S00_AXI_1_AWVALID;
-  wire [0:0]S00_AXI_1_BID;
-  wire S00_AXI_1_BREADY;
-  wire [1:0]S00_AXI_1_BRESP;
-  wire S00_AXI_1_BVALID;
-  wire [31:0]S00_AXI_1_RDATA;
-  wire [0:0]S00_AXI_1_RID;
-  wire S00_AXI_1_RLAST;
-  wire S00_AXI_1_RREADY;
-  wire [1:0]S00_AXI_1_RRESP;
-  wire S00_AXI_1_RVALID;
-  wire [31:0]S00_AXI_1_WDATA;
-  wire S00_AXI_1_WLAST;
-  wire S00_AXI_1_WREADY;
-  wire [3:0]S00_AXI_1_WSTRB;
-  wire S00_AXI_1_WVALID;
+  wire [31:0]Control_0_BRAM_IF_ADDR;
+  wire Control_0_BRAM_IF_CLK;
+  wire [31:0]Control_0_BRAM_IF_DIN;
+  wire [31:0]Control_0_BRAM_IF_DOUT;
+  wire Control_0_BRAM_IF_EN;
+  wire Control_0_BRAM_IF_RST;
+  wire [3:0]Control_0_BRAM_IF_WE;
+  wire [17:0]Control_0_ctr_sig_w;
+  wire [11:0]Control_0_decoder;
+  wire Control_0_fpga_en;
+  wire [7:0]Control_0_frame_num;
+  wire Control_0_frame_req;
+  wire [19:0]Control_0_in_delay_tap_in;
+  wire Control_0_spi_clk_out;
+  wire Control_0_spi_data;
+  wire Control_0_spi_read;
+  wire Control_0_spi_write;
+  wire Control_0_sys_rst_n;
+  wire [11:0]Control_0_trainning_word;
+  wire Control_0_xhs_out;
+  wire SPI0_MISO_I_0_1;
+  wire [31:0]StoreImg_0_M00_AXI_ARADDR;
+  wire [1:0]StoreImg_0_M00_AXI_ARBURST;
+  wire [3:0]StoreImg_0_M00_AXI_ARCACHE;
+  wire [0:0]StoreImg_0_M00_AXI_ARID;
+  wire [7:0]StoreImg_0_M00_AXI_ARLEN;
+  wire StoreImg_0_M00_AXI_ARLOCK;
+  wire [2:0]StoreImg_0_M00_AXI_ARPROT;
+  wire [3:0]StoreImg_0_M00_AXI_ARQOS;
+  wire StoreImg_0_M00_AXI_ARREADY;
+  wire [2:0]StoreImg_0_M00_AXI_ARSIZE;
+  wire StoreImg_0_M00_AXI_ARVALID;
+  wire [31:0]StoreImg_0_M00_AXI_AWADDR;
+  wire [1:0]StoreImg_0_M00_AXI_AWBURST;
+  wire [3:0]StoreImg_0_M00_AXI_AWCACHE;
+  wire [0:0]StoreImg_0_M00_AXI_AWID;
+  wire [7:0]StoreImg_0_M00_AXI_AWLEN;
+  wire StoreImg_0_M00_AXI_AWLOCK;
+  wire [2:0]StoreImg_0_M00_AXI_AWPROT;
+  wire [3:0]StoreImg_0_M00_AXI_AWQOS;
+  wire StoreImg_0_M00_AXI_AWREADY;
+  wire [2:0]StoreImg_0_M00_AXI_AWSIZE;
+  wire StoreImg_0_M00_AXI_AWVALID;
+  wire [0:0]StoreImg_0_M00_AXI_BID;
+  wire StoreImg_0_M00_AXI_BREADY;
+  wire [1:0]StoreImg_0_M00_AXI_BRESP;
+  wire StoreImg_0_M00_AXI_BVALID;
+  wire [31:0]StoreImg_0_M00_AXI_RDATA;
+  wire [0:0]StoreImg_0_M00_AXI_RID;
+  wire StoreImg_0_M00_AXI_RLAST;
+  wire StoreImg_0_M00_AXI_RREADY;
+  wire [1:0]StoreImg_0_M00_AXI_RRESP;
+  wire StoreImg_0_M00_AXI_RVALID;
+  wire [31:0]StoreImg_0_M00_AXI_WDATA;
+  wire StoreImg_0_M00_AXI_WLAST;
+  wire StoreImg_0_M00_AXI_WREADY;
+  wire [3:0]StoreImg_0_M00_AXI_WSTRB;
+  wire StoreImg_0_M00_AXI_WVALID;
   wire [31:0]axi_interconnect_0_M00_AXI_ARADDR;
   wire [2:0]axi_interconnect_0_M00_AXI_ARPROT;
   wire axi_interconnect_0_M00_AXI_ARREADY;
@@ -207,11 +233,8 @@ module BRAM_SPI
   wire clk_wiz_0_locked;
   wire [3:0]cmos_don_1;
   wire [3:0]cmos_dop_1;
-  wire [17:0]decoder_0_ctr_sig_w;
-  wire [11:0]decoder_0_decoder;
-  wire decoder_0_xhs_out;
-  wire [0:0]proc_sys_reset_0_peripheral_aresetn;
   wire [0:0]proc_sys_reset_m_peripheral_aresetn;
+  wire [0:0]proc_sys_reset_recv_peripheral_aresetn;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -273,45 +296,31 @@ module BRAM_SPI
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
-  wire receiver_0_data_valid;
-  wire receiver_0_frame_valid;
-  wire [31:0]receiver_0_img;
-  wire [10:0]receiver_0_pos_x;
-  wire [10:0]receiver_0_pos_y;
+  wire processing_system7_0_SPI0_SCLK_O;
+  wire processing_system7_0_SPI0_SS_O;
+  wire receiver_hw_0_data_valid;
+  wire receiver_hw_0_frame_valid;
+  wire [31:0]receiver_hw_0_img;
   wire [0:0]rst_ps7_0_50M_interconnect_aresetn;
-  wire [31:0]spi_config_0_BRAM_PROT_ADDR;
-  wire spi_config_0_BRAM_PROT_CLK;
-  wire [31:0]spi_config_0_BRAM_PROT_DIN;
-  wire [31:0]spi_config_0_BRAM_PROT_DOUT;
-  wire spi_config_0_BRAM_PROT_EN;
-  wire spi_config_0_BRAM_PROT_RST;
-  wire [3:0]spi_config_0_BRAM_PROT_WE;
-  wire [14:0]spi_config_0_exposure_time;
-  wire spi_config_0_fpga_en;
-  wire spi_config_0_frame_req;
-  wire spi_config_0_spi_clk_out;
-  wire spi_config_0_spi_data;
-  wire spi_config_0_spi_read;
-  wire spi_config_0_spi_write;
-  wire spi_config_0_sys_rst_n;
-  wire [11:0]spi_config_0_trainning_word;
-  wire spi_out_0_1;
+  wire spi_out_1;
 
-  assign clk_20m = clk_wiz_0_clk_out1;
+  assign SPI0_MISO_I_0_1 = temp_sdi;
   assign clk_in_n_1 = clk_in_n;
   assign clk_in_p_1 = clk_in_p;
   assign clk_out = clk_wiz_0_clk_out2;
   assign cmos_don_1 = cmos_don[3:0];
   assign cmos_dop_1 = cmos_dop[3:0];
-  assign ctr_sig_w[17:0] = decoder_0_ctr_sig_w;
-  assign decoder[11:0] = decoder_0_decoder;
-  assign fpga_en = spi_config_0_fpga_en;
-  assign spi_clk = spi_config_0_spi_clk_out;
-  assign spi_data = spi_config_0_spi_data;
-  assign spi_out_0_1 = spi_out;
-  assign spi_read = spi_config_0_spi_read;
-  assign spi_write = spi_config_0_spi_write;
-  assign sys_rst_n = spi_config_0_sys_rst_n;
+  assign ctr_sig_w[17:0] = Control_0_ctr_sig_w;
+  assign decoder[11:0] = Control_0_decoder;
+  assign fpga_en = Control_0_fpga_en;
+  assign spi_clk = Control_0_spi_clk_out;
+  assign spi_data = Control_0_spi_data;
+  assign spi_out_1 = spi_out;
+  assign spi_read = Control_0_spi_read;
+  assign spi_write = Control_0_spi_write;
+  assign sys_rst_n = Control_0_sys_rst_n;
+  assign temp_sck = processing_system7_0_SPI0_SCLK_O;
+  assign temp_ss = processing_system7_0_SPI0_SS_O;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x40000000 32 > BRAM_SPI Block_RAM" *) 
   (* KEEP_HIERARCHY = "yes" *) 
   BRAM_SPI_axi_bram_ctrl_0_0 BRAM_CTL1
@@ -345,64 +354,106 @@ module BRAM_SPI
         .s_axi_wvalid(axi_interconnect_0_M00_AXI_WVALID));
   BRAM_SPI_blk_mem_gen_0_0 Block_RAM
        (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,BRAM_CTL1_BRAM_PORTA_ADDR}),
-        .addrb(spi_config_0_BRAM_PROT_ADDR),
+        .addrb(Control_0_BRAM_IF_ADDR),
         .clka(BRAM_CTL1_BRAM_PORTA_CLK),
-        .clkb(spi_config_0_BRAM_PROT_CLK),
+        .clkb(Control_0_BRAM_IF_CLK),
         .dina(BRAM_CTL1_BRAM_PORTA_DIN),
-        .dinb(spi_config_0_BRAM_PROT_DIN),
+        .dinb(Control_0_BRAM_IF_DIN),
         .douta(BRAM_CTL1_BRAM_PORTA_DOUT),
-        .doutb(spi_config_0_BRAM_PROT_DOUT),
+        .doutb(Control_0_BRAM_IF_DOUT),
         .ena(BRAM_CTL1_BRAM_PORTA_EN),
-        .enb(spi_config_0_BRAM_PROT_EN),
+        .enb(Control_0_BRAM_IF_EN),
         .rsta(BRAM_CTL1_BRAM_PORTA_RST),
-        .rstb(spi_config_0_BRAM_PROT_RST),
+        .rstb(Control_0_BRAM_IF_RST),
         .wea(BRAM_CTL1_BRAM_PORTA_WE),
-        .web(spi_config_0_BRAM_PROT_WE));
-  BRAM_SPI_StoreImg_0_0 StoreImg_0
-       (.data_valid(receiver_0_data_valid),
-        .frame_valid(receiver_0_frame_valid),
-        .img(receiver_0_img),
+        .web(Control_0_BRAM_IF_WE));
+  BRAM_SPI_Control_0_0 Control_0
+       (.ctr_sig_w(Control_0_ctr_sig_w),
+        .decoder(Control_0_decoder),
+        .fpga_en(Control_0_fpga_en),
+        .frame_num(Control_0_frame_num),
+        .frame_req(Control_0_frame_req),
+        .in_delay_tap_in(Control_0_in_delay_tap_in),
+        .ram_addr(Control_0_BRAM_IF_ADDR),
+        .ram_clk(Control_0_BRAM_IF_CLK),
+        .ram_en(Control_0_BRAM_IF_EN),
+        .ram_rd_data(Control_0_BRAM_IF_DOUT),
+        .ram_rst(Control_0_BRAM_IF_RST),
+        .ram_we(Control_0_BRAM_IF_WE),
+        .ram_wr_data(Control_0_BRAM_IF_DIN),
+        .s_axi_ctrl_aclk(clk_wiz_0_clk_out1),
+        .s_axi_ctrl_araddr(axi_interconnect_0_M01_AXI_ARADDR[5:0]),
+        .s_axi_ctrl_aresetn(proc_sys_reset_m_peripheral_aresetn),
+        .s_axi_ctrl_arprot(axi_interconnect_0_M01_AXI_ARPROT),
+        .s_axi_ctrl_arready(axi_interconnect_0_M01_AXI_ARREADY),
+        .s_axi_ctrl_arvalid(axi_interconnect_0_M01_AXI_ARVALID),
+        .s_axi_ctrl_awaddr(axi_interconnect_0_M01_AXI_AWADDR[5:0]),
+        .s_axi_ctrl_awprot(axi_interconnect_0_M01_AXI_AWPROT),
+        .s_axi_ctrl_awready(axi_interconnect_0_M01_AXI_AWREADY),
+        .s_axi_ctrl_awvalid(axi_interconnect_0_M01_AXI_AWVALID),
+        .s_axi_ctrl_bready(axi_interconnect_0_M01_AXI_BREADY),
+        .s_axi_ctrl_bresp(axi_interconnect_0_M01_AXI_BRESP),
+        .s_axi_ctrl_bvalid(axi_interconnect_0_M01_AXI_BVALID),
+        .s_axi_ctrl_rdata(axi_interconnect_0_M01_AXI_RDATA),
+        .s_axi_ctrl_rready(axi_interconnect_0_M01_AXI_RREADY),
+        .s_axi_ctrl_rresp(axi_interconnect_0_M01_AXI_RRESP),
+        .s_axi_ctrl_rvalid(axi_interconnect_0_M01_AXI_RVALID),
+        .s_axi_ctrl_wdata(axi_interconnect_0_M01_AXI_WDATA),
+        .s_axi_ctrl_wready(axi_interconnect_0_M01_AXI_WREADY),
+        .s_axi_ctrl_wstrb(axi_interconnect_0_M01_AXI_WSTRB),
+        .s_axi_ctrl_wvalid(axi_interconnect_0_M01_AXI_WVALID),
+        .spi_clk_out(Control_0_spi_clk_out),
+        .spi_data(Control_0_spi_data),
+        .spi_out(spi_out_1),
+        .spi_read(Control_0_spi_read),
+        .spi_write(Control_0_spi_write),
+        .sys_rst_n(Control_0_sys_rst_n),
+        .trainning_word(Control_0_trainning_word),
+        .xhs_out(Control_0_xhs_out));
+  BRAM_SPI_StoreImg_0_1 StoreImg_0
+       (.data_valid(receiver_hw_0_data_valid),
+        .frame_num(Control_0_frame_num),
+        .frame_valid(receiver_hw_0_frame_valid),
+        .img(receiver_hw_0_img),
         .m00_axi_aclk(clk_wiz_0_clk_recv),
-        .m00_axi_araddr(S00_AXI_1_ARADDR),
-        .m00_axi_arburst(S00_AXI_1_ARBURST),
-        .m00_axi_arcache(S00_AXI_1_ARCACHE),
-        .m00_axi_aresetn(proc_sys_reset_0_peripheral_aresetn),
-        .m00_axi_arid(S00_AXI_1_ARID),
-        .m00_axi_arlen(S00_AXI_1_ARLEN),
-        .m00_axi_arlock(S00_AXI_1_ARLOCK),
-        .m00_axi_arprot(S00_AXI_1_ARPROT),
-        .m00_axi_arqos(S00_AXI_1_ARQOS),
-        .m00_axi_arready(S00_AXI_1_ARREADY),
-        .m00_axi_arsize(S00_AXI_1_ARSIZE),
-        .m00_axi_arvalid(S00_AXI_1_ARVALID),
-        .m00_axi_awaddr(S00_AXI_1_AWADDR),
-        .m00_axi_awburst(S00_AXI_1_AWBURST),
-        .m00_axi_awcache(S00_AXI_1_AWCACHE),
-        .m00_axi_awid(S00_AXI_1_AWID),
-        .m00_axi_awlen(S00_AXI_1_AWLEN),
-        .m00_axi_awlock(S00_AXI_1_AWLOCK),
-        .m00_axi_awprot(S00_AXI_1_AWPROT),
-        .m00_axi_awqos(S00_AXI_1_AWQOS),
-        .m00_axi_awready(S00_AXI_1_AWREADY),
-        .m00_axi_awsize(S00_AXI_1_AWSIZE),
-        .m00_axi_awvalid(S00_AXI_1_AWVALID),
-        .m00_axi_bid(S00_AXI_1_BID),
-        .m00_axi_bready(S00_AXI_1_BREADY),
-        .m00_axi_bresp(S00_AXI_1_BRESP),
-        .m00_axi_bvalid(S00_AXI_1_BVALID),
-        .m00_axi_rdata(S00_AXI_1_RDATA),
-        .m00_axi_rid(S00_AXI_1_RID),
-        .m00_axi_rlast(S00_AXI_1_RLAST),
-        .m00_axi_rready(S00_AXI_1_RREADY),
-        .m00_axi_rresp(S00_AXI_1_RRESP),
-        .m00_axi_rvalid(S00_AXI_1_RVALID),
-        .m00_axi_wdata(S00_AXI_1_WDATA),
-        .m00_axi_wlast(S00_AXI_1_WLAST),
-        .m00_axi_wready(S00_AXI_1_WREADY),
-        .m00_axi_wstrb(S00_AXI_1_WSTRB),
-        .m00_axi_wvalid(S00_AXI_1_WVALID),
-        .pos_x(receiver_0_pos_x),
-        .pos_y(receiver_0_pos_y));
+        .m00_axi_araddr(StoreImg_0_M00_AXI_ARADDR),
+        .m00_axi_arburst(StoreImg_0_M00_AXI_ARBURST),
+        .m00_axi_arcache(StoreImg_0_M00_AXI_ARCACHE),
+        .m00_axi_aresetn(proc_sys_reset_recv_peripheral_aresetn),
+        .m00_axi_arid(StoreImg_0_M00_AXI_ARID),
+        .m00_axi_arlen(StoreImg_0_M00_AXI_ARLEN),
+        .m00_axi_arlock(StoreImg_0_M00_AXI_ARLOCK),
+        .m00_axi_arprot(StoreImg_0_M00_AXI_ARPROT),
+        .m00_axi_arqos(StoreImg_0_M00_AXI_ARQOS),
+        .m00_axi_arready(StoreImg_0_M00_AXI_ARREADY),
+        .m00_axi_arsize(StoreImg_0_M00_AXI_ARSIZE),
+        .m00_axi_arvalid(StoreImg_0_M00_AXI_ARVALID),
+        .m00_axi_awaddr(StoreImg_0_M00_AXI_AWADDR),
+        .m00_axi_awburst(StoreImg_0_M00_AXI_AWBURST),
+        .m00_axi_awcache(StoreImg_0_M00_AXI_AWCACHE),
+        .m00_axi_awid(StoreImg_0_M00_AXI_AWID),
+        .m00_axi_awlen(StoreImg_0_M00_AXI_AWLEN),
+        .m00_axi_awlock(StoreImg_0_M00_AXI_AWLOCK),
+        .m00_axi_awprot(StoreImg_0_M00_AXI_AWPROT),
+        .m00_axi_awqos(StoreImg_0_M00_AXI_AWQOS),
+        .m00_axi_awready(StoreImg_0_M00_AXI_AWREADY),
+        .m00_axi_awsize(StoreImg_0_M00_AXI_AWSIZE),
+        .m00_axi_awvalid(StoreImg_0_M00_AXI_AWVALID),
+        .m00_axi_bid(StoreImg_0_M00_AXI_BID),
+        .m00_axi_bready(StoreImg_0_M00_AXI_BREADY),
+        .m00_axi_bresp(StoreImg_0_M00_AXI_BRESP),
+        .m00_axi_bvalid(StoreImg_0_M00_AXI_BVALID),
+        .m00_axi_rdata(StoreImg_0_M00_AXI_RDATA),
+        .m00_axi_rid(StoreImg_0_M00_AXI_RID),
+        .m00_axi_rlast(StoreImg_0_M00_AXI_RLAST),
+        .m00_axi_rready(StoreImg_0_M00_AXI_RREADY),
+        .m00_axi_rresp(StoreImg_0_M00_AXI_RRESP),
+        .m00_axi_rvalid(StoreImg_0_M00_AXI_RVALID),
+        .m00_axi_wdata(StoreImg_0_M00_AXI_WDATA),
+        .m00_axi_wlast(StoreImg_0_M00_AXI_WLAST),
+        .m00_axi_wready(StoreImg_0_M00_AXI_WREADY),
+        .m00_axi_wstrb(StoreImg_0_M00_AXI_WSTRB),
+        .m00_axi_wvalid(StoreImg_0_M00_AXI_WVALID));
   BRAM_SPI_axi_interconnect_0_0 axi_interconnect_0
        (.ACLK(clk_wiz_0_clk_out1),
         .ARESETN(rst_ps7_0_50M_interconnect_aresetn),
@@ -490,9 +541,9 @@ module BRAM_SPI
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   BRAM_SPI_axi_interconnect_1_0 axi_interconnect_1
        (.ACLK(clk_wiz_0_clk_recv),
-        .ARESETN(proc_sys_reset_0_peripheral_aresetn),
+        .ARESETN(ARESETN_1),
         .M00_ACLK(clk_wiz_0_clk_recv),
-        .M00_ARESETN(proc_sys_reset_0_peripheral_aresetn),
+        .M00_ARESETN(ARESETN_1),
         .M00_AXI_araddr(axi_interconnect_1_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_interconnect_1_M00_AXI_ARBURST),
         .M00_AXI_arcache(axi_interconnect_1_M00_AXI_ARCACHE),
@@ -527,44 +578,44 @@ module BRAM_SPI
         .M00_AXI_wstrb(axi_interconnect_1_M00_AXI_WSTRB),
         .M00_AXI_wvalid(axi_interconnect_1_M00_AXI_WVALID),
         .S00_ACLK(clk_wiz_0_clk_recv),
-        .S00_ARESETN(proc_sys_reset_0_peripheral_aresetn),
-        .S00_AXI_araddr(S00_AXI_1_ARADDR),
-        .S00_AXI_arburst(S00_AXI_1_ARBURST),
-        .S00_AXI_arcache(S00_AXI_1_ARCACHE),
-        .S00_AXI_arid(S00_AXI_1_ARID),
-        .S00_AXI_arlen(S00_AXI_1_ARLEN),
-        .S00_AXI_arlock(S00_AXI_1_ARLOCK),
-        .S00_AXI_arprot(S00_AXI_1_ARPROT),
-        .S00_AXI_arqos(S00_AXI_1_ARQOS),
-        .S00_AXI_arready(S00_AXI_1_ARREADY),
-        .S00_AXI_arsize(S00_AXI_1_ARSIZE),
-        .S00_AXI_arvalid(S00_AXI_1_ARVALID),
-        .S00_AXI_awaddr(S00_AXI_1_AWADDR),
-        .S00_AXI_awburst(S00_AXI_1_AWBURST),
-        .S00_AXI_awcache(S00_AXI_1_AWCACHE),
-        .S00_AXI_awid(S00_AXI_1_AWID),
-        .S00_AXI_awlen(S00_AXI_1_AWLEN),
-        .S00_AXI_awlock(S00_AXI_1_AWLOCK),
-        .S00_AXI_awprot(S00_AXI_1_AWPROT),
-        .S00_AXI_awqos(S00_AXI_1_AWQOS),
-        .S00_AXI_awready(S00_AXI_1_AWREADY),
-        .S00_AXI_awsize(S00_AXI_1_AWSIZE),
-        .S00_AXI_awvalid(S00_AXI_1_AWVALID),
-        .S00_AXI_bid(S00_AXI_1_BID),
-        .S00_AXI_bready(S00_AXI_1_BREADY),
-        .S00_AXI_bresp(S00_AXI_1_BRESP),
-        .S00_AXI_bvalid(S00_AXI_1_BVALID),
-        .S00_AXI_rdata(S00_AXI_1_RDATA),
-        .S00_AXI_rid(S00_AXI_1_RID),
-        .S00_AXI_rlast(S00_AXI_1_RLAST),
-        .S00_AXI_rready(S00_AXI_1_RREADY),
-        .S00_AXI_rresp(S00_AXI_1_RRESP),
-        .S00_AXI_rvalid(S00_AXI_1_RVALID),
-        .S00_AXI_wdata(S00_AXI_1_WDATA),
-        .S00_AXI_wlast(S00_AXI_1_WLAST),
-        .S00_AXI_wready(S00_AXI_1_WREADY),
-        .S00_AXI_wstrb(S00_AXI_1_WSTRB),
-        .S00_AXI_wvalid(S00_AXI_1_WVALID));
+        .S00_ARESETN(ARESETN_1),
+        .S00_AXI_araddr(StoreImg_0_M00_AXI_ARADDR),
+        .S00_AXI_arburst(StoreImg_0_M00_AXI_ARBURST),
+        .S00_AXI_arcache(StoreImg_0_M00_AXI_ARCACHE),
+        .S00_AXI_arid(StoreImg_0_M00_AXI_ARID),
+        .S00_AXI_arlen(StoreImg_0_M00_AXI_ARLEN),
+        .S00_AXI_arlock(StoreImg_0_M00_AXI_ARLOCK),
+        .S00_AXI_arprot(StoreImg_0_M00_AXI_ARPROT),
+        .S00_AXI_arqos(StoreImg_0_M00_AXI_ARQOS),
+        .S00_AXI_arready(StoreImg_0_M00_AXI_ARREADY),
+        .S00_AXI_arsize(StoreImg_0_M00_AXI_ARSIZE),
+        .S00_AXI_arvalid(StoreImg_0_M00_AXI_ARVALID),
+        .S00_AXI_awaddr(StoreImg_0_M00_AXI_AWADDR),
+        .S00_AXI_awburst(StoreImg_0_M00_AXI_AWBURST),
+        .S00_AXI_awcache(StoreImg_0_M00_AXI_AWCACHE),
+        .S00_AXI_awid(StoreImg_0_M00_AXI_AWID),
+        .S00_AXI_awlen(StoreImg_0_M00_AXI_AWLEN),
+        .S00_AXI_awlock(StoreImg_0_M00_AXI_AWLOCK),
+        .S00_AXI_awprot(StoreImg_0_M00_AXI_AWPROT),
+        .S00_AXI_awqos(StoreImg_0_M00_AXI_AWQOS),
+        .S00_AXI_awready(StoreImg_0_M00_AXI_AWREADY),
+        .S00_AXI_awsize(StoreImg_0_M00_AXI_AWSIZE),
+        .S00_AXI_awvalid(StoreImg_0_M00_AXI_AWVALID),
+        .S00_AXI_bid(StoreImg_0_M00_AXI_BID),
+        .S00_AXI_bready(StoreImg_0_M00_AXI_BREADY),
+        .S00_AXI_bresp(StoreImg_0_M00_AXI_BRESP),
+        .S00_AXI_bvalid(StoreImg_0_M00_AXI_BVALID),
+        .S00_AXI_rdata(StoreImg_0_M00_AXI_RDATA),
+        .S00_AXI_rid(StoreImg_0_M00_AXI_RID),
+        .S00_AXI_rlast(StoreImg_0_M00_AXI_RLAST),
+        .S00_AXI_rready(StoreImg_0_M00_AXI_RREADY),
+        .S00_AXI_rresp(StoreImg_0_M00_AXI_RRESP),
+        .S00_AXI_rvalid(StoreImg_0_M00_AXI_RVALID),
+        .S00_AXI_wdata(StoreImg_0_M00_AXI_WDATA),
+        .S00_AXI_wlast(StoreImg_0_M00_AXI_WLAST),
+        .S00_AXI_wready(StoreImg_0_M00_AXI_WREADY),
+        .S00_AXI_wstrb(StoreImg_0_M00_AXI_WSTRB),
+        .S00_AXI_wvalid(StoreImg_0_M00_AXI_WVALID));
   BRAM_SPI_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_main(clk_wiz_0_clk_out1),
@@ -572,14 +623,6 @@ module BRAM_SPI
         .clk_recv(clk_wiz_0_clk_recv),
         .locked(clk_wiz_0_locked),
         .resetn(processing_system7_0_FCLK_RESET0_N));
-  BRAM_SPI_decoder_0_0 decoder_0
-       (.clk_rxg(clk_wiz_0_clk_out1),
-        .ctr_sig_w(decoder_0_ctr_sig_w),
-        .decoder(decoder_0_decoder),
-        .exp_line_time_req(spi_config_0_exposure_time),
-        .frame_req(spi_config_0_frame_req),
-        .rst_rx_n(proc_sys_reset_m_peripheral_aresetn),
-        .xhs_out(decoder_0_xhs_out));
   BRAM_SPI_proc_sys_reset_recv_0 proc_sys_reset_m
        (.aux_reset_in(1'b1),
         .dcm_locked(clk_wiz_0_locked),
@@ -592,8 +635,9 @@ module BRAM_SPI
        (.aux_reset_in(1'b1),
         .dcm_locked(clk_wiz_0_locked),
         .ext_reset_in(clk_wiz_0_locked),
+        .interconnect_aresetn(ARESETN_1),
         .mb_debug_sys_rst(1'b0),
-        .peripheral_aresetn(proc_sys_reset_0_peripheral_aresetn),
+        .peripheral_aresetn(proc_sys_reset_recv_peripheral_aresetn),
         .slowest_sync_clk(clk_wiz_0_clk_recv));
   (* BMM_INFO_PROCESSOR = "arm > BRAM_SPI BRAM_CTL1" *) 
   (* KEEP_HIERARCHY = "yes" *) 
@@ -660,6 +704,12 @@ module BRAM_SPI
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
+        .SPI0_MISO_I(SPI0_MISO_I_0_1),
+        .SPI0_MOSI_I(1'b0),
+        .SPI0_SCLK_I(1'b0),
+        .SPI0_SCLK_O(processing_system7_0_SPI0_SCLK_O),
+        .SPI0_SS_I(1'b0),
+        .SPI0_SS_O(processing_system7_0_SPI0_SS_O),
         .S_AXI_HP0_ACLK(clk_wiz_0_clk_recv),
         .S_AXI_HP0_ARADDR(axi_interconnect_1_M00_AXI_ARADDR),
         .S_AXI_HP0_ARBURST(axi_interconnect_1_M00_AXI_ARBURST),
@@ -699,60 +749,23 @@ module BRAM_SPI
         .S_AXI_HP0_WRISSUECAP1_EN(1'b0),
         .S_AXI_HP0_WSTRB(axi_interconnect_1_M00_AXI_WSTRB),
         .S_AXI_HP0_WVALID(axi_interconnect_1_M00_AXI_WVALID));
-  BRAM_SPI_receiver_0_0 receiver_0
+  BRAM_SPI_receiver_hw_0_0 receiver_hw_0
        (.clk_in_n(clk_in_n_1),
         .clk_in_p(clk_in_p_1),
+        .clk_main(clk_wiz_0_clk_out1),
         .clk_recv(clk_wiz_0_clk_recv),
         .cmos_don(cmos_don_1),
         .cmos_dop(cmos_dop_1),
-        .data_valid(receiver_0_data_valid),
-        .frame_trig(spi_config_0_frame_req),
-        .frame_valid(receiver_0_frame_valid),
-        .img(receiver_0_img),
-        .pos_x(receiver_0_pos_x),
-        .pos_y(receiver_0_pos_y),
-        .rst_n(proc_sys_reset_0_peripheral_aresetn),
-        .trainning_words(spi_config_0_trainning_word),
-        .xhs(decoder_0_xhs_out));
-  BRAM_SPI_spi_config_0_0 spi_config_0
-       (.exposure_time(spi_config_0_exposure_time),
-        .fpga_en(spi_config_0_fpga_en),
-        .frame_req(spi_config_0_frame_req),
-        .ram_addr(spi_config_0_BRAM_PROT_ADDR),
-        .ram_clk(spi_config_0_BRAM_PROT_CLK),
-        .ram_en(spi_config_0_BRAM_PROT_EN),
-        .ram_rd_data(spi_config_0_BRAM_PROT_DOUT),
-        .ram_rst(spi_config_0_BRAM_PROT_RST),
-        .ram_we(spi_config_0_BRAM_PROT_WE),
-        .ram_wr_data(spi_config_0_BRAM_PROT_DIN),
-        .s00_axi_aclk(clk_wiz_0_clk_out1),
-        .s00_axi_araddr(axi_interconnect_0_M01_AXI_ARADDR[3:0]),
-        .s00_axi_aresetn(proc_sys_reset_m_peripheral_aresetn),
-        .s00_axi_arprot(axi_interconnect_0_M01_AXI_ARPROT),
-        .s00_axi_arready(axi_interconnect_0_M01_AXI_ARREADY),
-        .s00_axi_arvalid(axi_interconnect_0_M01_AXI_ARVALID),
-        .s00_axi_awaddr(axi_interconnect_0_M01_AXI_AWADDR[3:0]),
-        .s00_axi_awprot(axi_interconnect_0_M01_AXI_AWPROT),
-        .s00_axi_awready(axi_interconnect_0_M01_AXI_AWREADY),
-        .s00_axi_awvalid(axi_interconnect_0_M01_AXI_AWVALID),
-        .s00_axi_bready(axi_interconnect_0_M01_AXI_BREADY),
-        .s00_axi_bresp(axi_interconnect_0_M01_AXI_BRESP),
-        .s00_axi_bvalid(axi_interconnect_0_M01_AXI_BVALID),
-        .s00_axi_rdata(axi_interconnect_0_M01_AXI_RDATA),
-        .s00_axi_rready(axi_interconnect_0_M01_AXI_RREADY),
-        .s00_axi_rresp(axi_interconnect_0_M01_AXI_RRESP),
-        .s00_axi_rvalid(axi_interconnect_0_M01_AXI_RVALID),
-        .s00_axi_wdata(axi_interconnect_0_M01_AXI_WDATA),
-        .s00_axi_wready(axi_interconnect_0_M01_AXI_WREADY),
-        .s00_axi_wstrb(axi_interconnect_0_M01_AXI_WSTRB),
-        .s00_axi_wvalid(axi_interconnect_0_M01_AXI_WVALID),
-        .spi_clk_out(spi_config_0_spi_clk_out),
-        .spi_data(spi_config_0_spi_data),
-        .spi_out(spi_out_0_1),
-        .spi_read(spi_config_0_spi_read),
-        .spi_write(spi_config_0_spi_write),
-        .sys_rst_n(spi_config_0_sys_rst_n),
-        .trainning_word(spi_config_0_trainning_word));
+        .data_valid(receiver_hw_0_data_valid),
+        .frame_num(Control_0_frame_num),
+        .frame_trig(Control_0_frame_req),
+        .frame_valid(receiver_hw_0_frame_valid),
+        .img(receiver_hw_0_img),
+        .in_delay_tap_in(Control_0_in_delay_tap_in),
+        .rst_n_main(proc_sys_reset_m_peripheral_aresetn),
+        .rst_n_recv(proc_sys_reset_recv_peripheral_aresetn),
+        .trainning_words(Control_0_trainning_word),
+        .xhs(Control_0_xhs_out));
 endmodule
 
 module BRAM_SPI_axi_interconnect_0_0
