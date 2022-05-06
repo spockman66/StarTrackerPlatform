@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 2 resources" deleteContents="true" description="Delete 2 resources" element1="/g2020_bsp_xemacps_example_intr_dma_1" element2="/g2020_bsp_xemacps_ieee1588_example_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1646447111821"/>
-</session>

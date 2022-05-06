@@ -1,5 +1,0 @@
-1647826201289	Delete resource 'cpu0/src/echo.c'
-1647910516210	Delete resource 'cpu0/src/sys_intr.c'
-1647910523909	Delete resource 'cpu0/src/sys_intr.h'
-1647910529714	Delete resource 'cpu0/src/timer_intr.c'
-1647910531447	Delete resource 'cpu0/src/timer_intr.h'

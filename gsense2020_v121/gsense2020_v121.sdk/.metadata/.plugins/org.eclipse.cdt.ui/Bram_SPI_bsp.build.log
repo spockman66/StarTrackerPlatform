@@ -1,6 +1,0 @@
-11:54:35 **** Auto Build of project Bram_SPI_bsp ****
-make -k all 
-make: *** 没有规则可以创建目标“all”.
-
-11:54:36 Build Finished (took 933ms)
-
