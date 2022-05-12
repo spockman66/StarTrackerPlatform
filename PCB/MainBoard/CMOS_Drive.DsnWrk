@@ -4,5 +4,3 @@ Version=1.0
 ProjectPath=MainBoard.PrjPcb
 [Project2]
 ProjectPath=..\Sensor_board\Sensor_board.PrjPcb
-[Project3]
-ProjectPath=..\MZ7035FA_HW201909\03_µ×°åÉè¼ÆÍ¼Ö½\MZ7035_FA20190912\MZ7035_FA20190912.PrjPCB
