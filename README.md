@@ -25,8 +25,11 @@ PS上目前运行裸机程序，负责将CMOS参数配置，发送DDR3内存中�
 
 ![电路架构设计](./Img/diagram.png)  
 
-PCB目录中`MainBoard`和`SensorBoard`，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板
-![主板3D渲染图](./Img/mainBoard3D.png)  
+PCB目录中`MainBoard`和`SensorBoard`，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板。   
+主板3D渲染图
+
+![主板3D渲染图](./Img/mainBoard3D.png)     
+成像子板3D渲染图  
 ![GSENSE2020BSI子板渲染图](./Img/sensorBoard3D.png )  
 
 
