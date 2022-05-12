@@ -26,13 +26,10 @@ PS上目前运行裸机程序，负责将CMOS参数配置，发送DDR3内存中�
 ![电路架构设计](./Img/diagram.png)  
 
 PCB目录中`MainBoard`和`SensorBoard`，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板。   
-主板3D渲染图
-
-![主板3D渲染图](./Img/mainBoard3D.png)     
+主板3D渲染图  
+<div align=center><img src="./Img/mainBoard3D.png" alt = "主板3D"></div>
 成像子板3D渲染图  
-![GSENSE2020BSI子板渲染图](./Img/sensorBoard3D.png )  
-
-
+<div align=center><img src="./Img/sensorBoard3D.png" alt = "子板3D"></div>
 
 根据实际实现效果来看，除了GSENSE2020BSI的驱动设计，实验室学长在开发另一款成像芯片驱动时，只设计对应的子板安装到本系统上，成功进行了测试，节省了开发时间，因此可以说已经基本实现了电路可重构的效果。
 
@@ -67,11 +64,9 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 ### 6. 成像
 在静态星模上测试，设置曝光时间为100ms，可以探测到的极限星等为8等星，背景噪声标准差为约为3.4。  
 
-七等星成像效果   
-![7等星](./Img/starImg/7_100ms.png)   
-
-八等星成像效果   
-![8等星](./Img/starImg/8_100ms.png)   
+**七等星**和**八等星**的成像效果   
+<center class="half"> <img src="./Img/starImg/7_100ms.png" alt="七等星" width="300" height="300"> <img src="./Img/starImg/8_100ms.png" alt="七等星" width="300" height="300">
+</center>
 
 吓你一跳！  
-![成像效果自拍](./Img/selfie.png)
+<div align=center><img src="./Img/selfie.png" width="300" height="300"></div>
