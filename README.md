@@ -72,8 +72,11 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 
 #### **2022年5月13日外场观星**成像效果(取低八位)  
 晴天无云和有云遮挡   
-<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" alt="无云观星" width=60%> <img src="./Img/513观星/513_17_fish.png" alt="来云了" width=60%>
-</center>
+<div align=center>  <img src="./Img/513观星/513_1_no_cloud.png" alt="无云观星" width=60%>
+</div>
+
+<div align=center> <img src="./Img/513观星/513_17_fish.png" alt="来云了" width=60%>
+</div>    
 
 
 来个自拍吓你一跳！  
