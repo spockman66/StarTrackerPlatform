@@ -24,13 +24,13 @@ PS上目前运行裸机程序，负责将CMOS参数配置，发送DDR3内存中�
 
 
 ### 3. 电路设计
-本方案的设计初衷是，将搭载主控芯片的核心板和图像传感器及其外围电路分别放置在不同的PCB板上，二者之间使用较为通用的主板进行转接。该设计方案的好处是：若更换图像传感器，只需重新设计相应的外围电路（子板），不需要变动其他电路。   
+本方案的设计初衷是，**将搭载主控芯片的核心板和图像传感器及其外围电路分别放置在不同的PCB板上**，二者之间使用较为通用的主板进行转接。该设计方案的好处是：若更换图像传感器，**只需重新设计相应的外围电路（子板），不需要变动其他电路**。   
 
 <div align=center><img src="./Img/diagram.png" width= 80% alt = "电路架构设计"></div>  
 
 PCB目录中`MainBoard`和`SensorBoard`，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板。   
 主板和子板的3D渲染图  
-<center class="half"> <img src="./Img/mainBoard3D.png" alt = "主板3D" width = 35%>   <img src="./Img/sensorBoard3D.png" width = 40% alt="子板3D"> </center>
+<center class="half"> <img src="./Img/mainBoard3D.png" alt = "主板3D" width = 35%> <img src="./Img/sensorBoard3D.png" width = 40% alt="子板3D"> </center>    
 根据实际实现效果来看，除了GSENSE2020BSI的驱动设计，实验室学长在开发另一款成像芯片驱动时，只设计对应的子板安装到本系统上，成功进行了测试，节省了开发时间，因此可以说已经基本实现了电路可重构的效果。
 
 
@@ -69,11 +69,10 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 </center>
 
 #### **2022年5月13日外场观星**成像效果(取低八位)  
-晴天无云    
+晴天无云和有云遮挡   
 
-<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" width = 60% alt="七等星"> </center>     
-有云遮挡   
-<center class="half"> <img src="./Img/513观星/513_17_fish.png" width = 60% alt="七等星"> </center>
+<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" width = 60% alt="无云观星"> 
+<center class="half"> <img src="./Img/513观星/513_17_fish.png" width = 60% alt="来云了"> </center>
 
 
 来个自拍吓你一跳！  
