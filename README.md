@@ -13,24 +13,24 @@ PL做接口驱动电路，根据功能划分为三个模块：`Control`控制器
 PS上目前运行裸机程序，负责将CMOS参数配置，发送DDR3内存中的图像数据。
 
 ### 2. 结构
-根据可重构的设计理念，该实验平台包含通用的镜头转接件，以适配多种镜头。实现方法是使用**M64螺纹**来调节镜头位置，从而改变镜头到CMOS之间的工作距离。  
-![工装机械结构](./Img/outside.jpg)   
-上图安装了用于适配`定制镜头`的转接件
+根据可重构的设计理念，该实验平台包含通用的镜头转接件，以适配多种镜头。实现方法是使用**M64螺纹**来调节镜头位置，从而改变镜头到CMOS之间的工作距离。
 
-![组装图](./Img/explosion.gif) 
-上图是适配 **CS/C口镜头** 的机械结构爆炸视图，转接件为Model文件夹下的`cs.sldprt`，镜头固定在`cs_down.sldprt`。
+安装了用于适配**定制镜头**的转接件
+<div align=center><img src="./Img/outside.jpg" width= 50% alt = "工装机械结构"></div>   
+
+适配 **CS/C口镜头** 的机械结构爆炸视图，转接件为Model文件夹下的`cs.sldprt`，镜头固定在`cs_down.sldprt`。   
+<div align=center><img src="./Img/explosion.gif" width= 60% alt = "组装爆炸图"></div>   
+
+
 
 ### 3. 电路设计
-本方案的设计初衷是，将搭载主控芯片的核心板和图像传感器及其外围电路分别放置在不同的PCB板上，二者之间使用较为通用的主板进行转接。该设计方案的好处是：若更换图像传感器，只需重新设计相应的外围电路（子板），不需要变动其他电路。  
+本方案的设计初衷是，将搭载主控芯片的核心板和图像传感器及其外围电路分别放置在不同的PCB板上，二者之间使用较为通用的主板进行转接。该设计方案的好处是：若更换图像传感器，只需重新设计相应的外围电路（子板），不需要变动其他电路。   
 
-![电路架构设计](./Img/diagram.png)  
+<div align=center><img src="./Img/diagram.png" width= 80% alt = "电路架构设计"></div>  
 
 PCB目录中`MainBoard`和`SensorBoard`，MainBoard是通用主板设计，SensorBoard是针对于GSENSE2020BSI的图像驱动板。   
-主板3D渲染图  
-<div align=center><img src="./Img/mainBoard3D.png" alt = "主板3D"></div>
-成像子板3D渲染图  
-<div align=center><img src="./Img/sensorBoard3D.png" alt = "子板3D"></div>
-
+主板和子板的3D渲染图  
+<center class="half"> <img src="./Img/mainBoard3D.png" alt = "主板3D" width = 35%>   <img src="./Img/sensorBoard3D.png" width = 40% alt="子板3D"> </center>
 根据实际实现效果来看，除了GSENSE2020BSI的驱动设计，实验室学长在开发另一款成像芯片驱动时，只设计对应的子板安装到本系统上，成功进行了测试，节省了开发时间，因此可以说已经基本实现了电路可重构的效果。
 
 
@@ -69,11 +69,12 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 </center>
 
 #### **2022年5月13日外场观星**成像效果(取低八位)  
-晴天无云
-<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" width = 60% alt="七等星"> </center>   
-有云遮挡
+晴天无云    
+
+<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" width = 60% alt="七等星"> </center>     
+有云遮挡   
 <center class="half"> <img src="./Img/513观星/513_17_fish.png" width = 60% alt="七等星"> </center>
 
 
-吓你一跳！  
+来个自拍吓你一跳！  
 <div align=center><img src="./Img/selfie.png" width="300" height="300"></div>
