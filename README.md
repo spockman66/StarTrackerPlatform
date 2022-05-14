@@ -64,9 +64,16 @@ GSENSE2020BSI的图像信号img数据位宽为32-bit，单个数据包含了两�
 ### 6. 成像
 在静态星模上测试，设置曝光时间为100ms，可以探测到的极限星等为8等星，背景噪声标准差为约为3.4。  
 
-**七等星**和**八等星**的成像效果   
+#### **七等星**和**八等星**的成像效果   
 <center class="half"> <img src="./Img/starImg/7_100ms.png" alt="七等星" width="300" height="300"> <img src="./Img/starImg/8_100ms.png" alt="七等星" width="300" height="300">
 </center>
+
+#### **2022年5月13日外场观星**成像效果(取低八位)  
+晴天无云
+<center class="half"> <img src="./Img/513观星/513_1_no_cloud.png" width = 60% alt="七等星"> </center>   
+有云遮挡
+<center class="half"> <img src="./Img/513观星/513_17_fish.png" width = 60% alt="七等星"> </center>
+
 
 吓你一跳！  
 <div align=center><img src="./Img/selfie.png" width="300" height="300"></div>
